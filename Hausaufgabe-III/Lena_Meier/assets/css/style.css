@@ -1,0 +1,108 @@
+/* -------------------------------------
+		   CSS-GRID & FLEX
+-------------------------------------- */
+
+.grid {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #ffffff;
+	font-size: 0.7rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+/* -------------------------------------
+		     CSS-ANIMATION
+-------------------------------------- */
+
+.cell {
+	padding: 1rem;
+	animation: appearDisappear 10s infinite;
+}
+
+@keyframes appearDisappear {
+	0%,
+	49.9% {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+	50%,
+	100% {
+		opacity: 0;
+	}
+}
+
+/* -------------------------------------
+		     IMAGE-SIZING
+-------------------------------------- */
+
+.cell img {
+	max-width: 15rem;
+
+}
+
+
+/*----------------------------------------
+Body
+__________________________________________*/
+
+body{
+	margin:0;
+	background-color:#ffffff;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: rgb(255, 255, 255);
+  padding-top: 01vw;
+
+}
+
+
+.cell{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  	font-size: 15px;
+	color: rgb(248, 131, 243);
+
+
+
+}
+.image {
+	width: 200px;
+	height: 200px;
+	animation: opacity 7s infinite;
+
+
+}
+.cell {
+	width: 120px;
+	height: 100px;
+
+	background-color: ;
+	position: relative;
+	animation-name: example;
+	animation-duration: 20s;
+	animation-delay: 7s;
+	text-align: center;
+	border-radius: 10px;
+
+  }
+
+ 
+ 
+  
+  @keyframes example {
+	0%   {background-color:rgba(3, 24, 255, 0.425); left:0px; top:0px;}
+	25%  {background-color:rgb(3, 24, 255); left:200px; top:0px;}
+	50%  {background-color:rgba(255, 0, 111, 0.416); left:200px; top:200px;}
+	75%  {background-color:rgb(255, 0, 111); left:0px; top:200px;}
+	100% {background-color:rgba(6, 176, 255, 0.433); left:0px; top:0px;}
+  }
+
+  @keyframes opacity {
+	50% {opcatiy: 0;}
+  }

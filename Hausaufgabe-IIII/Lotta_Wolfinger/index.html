@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="de">
+	<!-- <!doctype html> und das html-Element mit Sprachkennzeichnung müssen immer vorhanden sein, damit die Seite funktioniert.-->
+
+	<head>
+		<meta charset="UTF-8" />
+		<!-- Durch dieses Element können Sonderzeichen angezeigt werden (z. B. äöüß oder Emojis) -->
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Browserkompatibilität -->
+
+		<title>Morphing SVG's – Die [ver]wandelnde Form</title>
+		<!-- Titel der Seite. Wird im Browser Tab angezeigt. -->
+
+		<link href="reset.css" type="text/css" rel="stylesheet" />
+		<link href="style.css" type="text/css" rel="stylesheet" />
+		<!-- Verlinkung der CSS-Dateien -->
+	</head>
+
+	<!-- Im <body> ist alles, was im Browserfenster angezeigt wird. -->
+	<body>
+		<section>
+			<!-- Dieses SVG wird im Element »animate« zum tanzen gebracht, die mit Semikolon abgetrennten Ankerpunkte in »values«  beschreiben die einzelnen Zustände der Animation. Damit die Animation funktioniert muss die Anzahl der Ankerpunkte der einzelnen Zustände immer gleich bleiben. -->
+			<svg viewbox="0 0 360 400">
+				<!-- »fill« legt die Farbe des SVG's fest. -->
+				<path fill="#FF13F0">
+					<!-- »dur« legt die Geschwindigkeit fest. »repeatCount« legt fest wie oft die Animation wiederholt wird. -->
+					<animate
+						attributeName="d"
+						dur="3000ms"
+						repeatCount="indefinite"
+						values="
+						M 69.94,96.8C152.84,90.67,176.05-.84,239.84.51c9.44.2,32.21,13.86,77.74,41.19,58.05,34.83,87.14,52.58,90.62,68.99,10.36,48.97-90.7,107.07-112.24,119.45-27.96,16.07-192.8,110.84-262.58,43.76C-12.74,229.58-7.63,123.9,31.84,100.4c11.48-6.83,18.16-2.13,38.1-3.6 Z;
+				  
+						M 69.94,59.61c82.91-6.12,177.91,103.47,215.99,52.27,10.7-14.38-13.88-134.69,31.66-107.36,58.05,34.83,87.14,52.58,90.62,68.99,10.36,48.97-90.7,107.07-112.24,119.45-27.96,16.07-192.8,110.84-262.58,43.76C-12.74,192.4-7.63,86.71,31.84,63.22c11.48-6.83,18.16-2.13,38.1-3.6 Z;
+		  
+						M 62.77,59.61c82.91-6.12,177.91,103.47,215.99,52.27,10.7-14.38-13.88-134.69,31.66-107.36,58.05,34.83,87.14,52.58,90.62,68.99,10.36,48.97,111.69,99.96,100.99,190.54-13.74,116.37-125.54,298.87-451.52,122.33C-5.75,355.93-14.8,86.71,24.67,63.22c11.48-6.83,18.16-2.13,38.1-3.6 Z;
+
+						M 62.77,59.61c82.91-6.12,177.91,103.47,215.99,52.27,10.7-14.38-13.88-134.69,31.66-107.36,58.05,34.83,87.14,52.58,90.62,68.99,10.36,48.97-90.7,107.07-112.24,119.45-27.96,16.07,87.69,369.97-238.29,193.43C-5.75,355.93-14.8,86.71,24.67,63.22c11.48-6.83,18.16-2.13,38.1-3.6 Z;
+
+						M 62.77,59.61c82.91-6.12,177.91,103.47,215.99,52.27,10.7-14.38-13.88-134.69,31.66-107.36,58.05,34.83,87.14,52.58,90.62,68.99,10.36,48.97-18.89,103.84-33.11,124.21-67.1,96.06,8.56,365.21-317.42,188.67C-5.75,355.93-14.8,86.71,24.67,63.22c11.48-6.83,18.16-2.13,38.1-3.6 Z;
+						" />
+				</path>
+			</svg>
+			<!-- Dieses SVG enthält neben der Animation ein Bild das duch das »image« Tag verlinkt ist. Mit der id namens »myimg« die im »clipPath« festgelegt wird wird das Bild wie in einer Maske hinter das SVG gelegt. -->
+			<svg viewbox="0 0 700 700">
+				<!-- Setzen der id »myImg« -->
+				<clipPath id="myImg">
+					<path fill="none">
+						<animate
+							attributeName="d"
+							dur="4000ms"
+							repeatCount="indefinite"
+							values="
+							M 75 122M 69.94,59.61c82.91-6.12,177.91,103.47,215.99,52.27,10.7-14.38-13.88-134.69,31.66-107.36,58.05,34.83,87.14,52.58,90.62,68.99,10.36,48.97-90.7,107.07-112.24,119.45-27.96,16.07-192.8,110.84-262.58,43.76C-12.74,192.4-7.63,86.71,31.84,63.22c11.48-6.83,18.16-2.13,38.1-3.6 Z;
+				  
+							M 62.77,59.61c82.91-6.12,177.91,103.47,215.99,52.27,10.7-14.38-13.88-134.69,31.66-107.36,58.05,34.83,87.14,52.58,90.62,68.99,10.36,48.97,111.69,99.96,100.99,190.54-13.74,116.37-125.54,298.87-451.52,122.33C-5.75,355.93-14.8,86.71,24.67,63.22c11.48-6.83,18.16-2.13,38.1-3.6 Z;
+		  
+							M 62.77,59.61c82.91-6.12,177.91,103.47,215.99,52.27,10.7-14.38-13.88-134.69,31.66-107.36,58.05,34.83,87.14,52.58,90.62,68.99,10.36,48.97-90.7,107.07-112.24,119.45-27.96,16.07,87.69,369.97-238.29,193.43C-5.75,355.93-14.8,86.71,24.67,63.22c11.48-6.83,18.16-2.13,38.1-3.6 Z;
+
+							M 62.77,59.61c82.91-6.12,177.91,103.47,215.99,52.27,10.7-14.38-13.88-134.69,31.66-107.36,58.05,34.83,87.14,52.58,90.62,68.99,10.36,48.97-18.89,103.84-33.11,124.21-67.1,96.06,8.56,365.21-317.42,188.67C-5.75,355.93-14.8,86.71,24.67,63.22c11.48-6.83,18.16-2.13,38.1-3.6 Z;
+
+							M 69.94,96.8C152.84,90.67,176.05-.84,239.84.51c9.44.2,32.21,13.86,77.74,41.19,58.05,34.83,87.14,52.58,90.62,68.99,10.36,48.97-90.7,107.07-112.24,119.45-27.96,16.07-192.8,110.84-262.58,43.76C-12.74,229.58-7.63,123.9,31.84,100.4c11.48-6.83,18.16-2.13,38.1-3.6 Z;
+							" />
+					</path>
+				</clipPath>
+				<!-- Verlinken der id »myImg« mit dem Bild -->
+				<image clip-path="url(#myImg)" xlink:href="giphy.webp" />
+			</svg>
+		</section>
+		<script src="script.js"></script>
+		<!-- Verlinkung der Javascript Dateien -->
+	</body>
+</html>
+<!-- Schließendes html-Element nicht vergessen! -->

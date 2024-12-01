@@ -1,0 +1,29 @@
+/* -----------------------------
+         SVG-MORPHING
+------------------------------ */
+body {
+	background-color: black;
+	min-height: auto;
+}
+
+section {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	height: 50vh;
+	margin-top: 10rem;
+}
+
+svg {
+	height: auto;
+	width: 100%;
+}
+
+image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: auto;
+}
+

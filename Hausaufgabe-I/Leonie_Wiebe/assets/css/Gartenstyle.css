@@ -1,0 +1,57 @@
+/*Fairy-Pflanzen*/
+
+html {
+  margin: 0.5cm;
+}
+
+.textblock {
+  color: lightskyblue;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 40px;
+  background-color: yellow;
+}
+
+.person {
+  font-size: 100px;
+  padding: 0;
+}
+
+.pondblock {
+  font-size: 40px;
+  text-align: center;
+  width: 16cm;
+  background-color: lightskyblue;
+  border-radius: 40px;
+  border-style: solid;
+  border-color: burlywood;
+  border-width: 30px;
+  margin: 0 auto;
+}
+
+.kleeblock {
+  margin-top: 50px;
+  margin-bottom: 200px;
+  margin-left: 10px;
+  font-size: 40px;
+  text-align: center;
+  width: 28cm;
+  background-color: lightgreen;
+  border-radius: 40px;
+  border-style: solid;
+  border-color: burlywood;
+  border-width: 30px;
+}
+
+.knospenblock {
+  margin-bottom: 50px;
+  margin-left: 500px;
+  font-size: 40px;
+  text-align: center;
+  width: 17cm;
+  background-color: lightgreen;
+  border-radius: 40px;
+  border-style: solid;
+  border-color: burlywood;
+  border-width: 30px;
+}

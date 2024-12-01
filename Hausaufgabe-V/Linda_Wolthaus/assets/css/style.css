@@ -1,0 +1,82 @@
+/* -----------------------------
+         ZWISCHENTITEL
+------------------------------ */
+
+@font-face {
+	font-family: Helvetica;
+	src: url("../../Helvetica.ttc");
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica", sans-serif;
+	background-color: rgb(255, 254, 243);
+}
+
+h1 {
+	font-family: "Fredoka";
+	font-size: 7rem;
+	color: rgb(201, 78, 115);
+}
+
+h2 {
+	font-family: "Fredoka";
+	font-size: 3rem;
+	color: rgb(132, 45, 71);
+	margin-bottom: 3rem;
+	font-weight: 400;
+}
+
+h3 {
+	font-family: Helvetica;
+	font-size: 1.9rem;
+	color: rgb(132, 45, 71);
+	margin-bottom: 0.5rem;
+	margin-top: 5rem;
+	font-weight: 600;
+}
+
+h4 {
+	font-family: Helvetica;
+	font-size: 1.9rem;
+	color: rgb(132, 45, 71);
+	margin-bottom: 0.5rem;
+	margin-top: 5rem;
+	font-weight: 600;
+}
+
+h5 {
+	font-size: 15px;
+	margin-top: 5rem;
+	font-weight: 50;
+}
+
+.bild1 {
+	width: 50%;
+	margin-left: -5%;
+	margin-top: -2%;
+	margin-bottom: -3.5%;
+}
+
+.bild2 {
+	width: 50%;
+	margin-top: 0.5rem;
+	margin-bottom: 1rem;
+	margin-left: -5.5%;
+}
+
+.bild3 {
+	width: 50%;
+	margin-top: 1rem;
+	margin-bottom: -2rem;
+	filter: grayscale(100);
+	margin-left: -4.1%;
+}
+
+.fredoka {
+	font-family: "Fredoka", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400; /* Standardgewicht (anpassbar von 300 bis 700) */
+	font-style: normal;
+}

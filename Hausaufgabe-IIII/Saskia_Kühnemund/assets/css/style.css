@@ -1,0 +1,28 @@
+/* -----------------------------
+         SVG-MORPHING
+------------------------------ */
+body {
+  background-image: linear-gradient(rgb(150, 225, 235), rgb(155, 113, 246), rgb(148, 124, 145));  
+  /* background-color: #72adff;*/
+  min-height: auto;
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10rem;
+}
+
+svg {
+  height: auto;
+  width: 100%;
+}
+
+image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: auto;
+}

@@ -1,0 +1,142 @@
+/* -----------------------------
+           BOX MODEL
+------------------------------ */
+
+html {
+  margin: 2rem;
+}
+
+header,
+nav {
+  margin: 2rem 0 2rem;
+  font-size: 3.8rem;
+}
+
+footer {
+  margin: 2rem 0 1rem 0;
+  font-size: 4rem;
+}
+
+p,
+ul,
+div {
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+
+li {
+  margin-top: 1rem;
+  list-style: none; /* Aufzählungszeichen, Standard: disc */
+  font-size: 3rem;
+}
+
+body {
+  padding: 1rem 2rem;
+}
+
+section {
+  padding: 2rem;
+}
+
+p,
+ul,
+li,
+h1,
+div,
+header,
+nav,
+footer {
+  padding: 1.5rem;
+}
+
+.red,
+a {
+  padding: 0.5rem;
+}
+
+header,
+nav,
+footer {
+  height: 6rem;
+}
+
+/* -----------------------------
+            COLORS
+------------------------------ */
+
+.red {
+  color: rgb(223, 0, 0); /* Schriftfarbe */
+  background-color: rgb(255, 162, 209); /* Hintergrundfarbe */
+  border: 2px solid rgb(246, 0, 0); /* Rahmen: Breite, Beschaffenheit, Farbe  */
+}
+
+a {
+  color:#c504ff;
+  background-color: rgb(157, 255, 255);
+  border: 2px solid rgb(46, 81, 255);
+}
+
+html {
+  background-color: rgb(141, 134, 134);
+}
+
+body {
+  background-color: rgb(144, 238, 144);
+  border: 2px solid rgb(0, 255, 98);
+}
+
+section {
+  background-color: rgb(247, 197, 103);
+  border: 2px solid rgb(255, 153, 1);
+}
+
+header {
+  background-color: rgb(173, 216, 230);
+  border: 2px solid rgb(0, 162, 255);
+}	
+
+nav {
+  background-color: rgb(215, 177, 252);
+  border: 2px solid rgb(184, 47, 238);
+}
+
+footer {
+  background-color: rgb(246, 160, 144);
+  border: 2px solid rgb(255, 1, 52);
+}
+
+h1,
+ul,
+li,
+p,
+div {
+  background-color: rgb(251, 240, 115);
+  border: 2px solid rgb(234, 255, 0);
+}
+
+/* -----------------------------
+        PSEUDO-KLASSEN
+------------------------------ */
+/* :hover wird aktiviert, wenn man mit der Maus über den Link fährt, :active, wenn der Link gedrückt wird. */
+a:hover,
+a:active {
+  color: rgb(0, 0, 255);
+}
+
+/* -----------------------------
+          TYPOGRAPHY
+------------------------------ */
+/* Das body Element spricht alle Inline-Level-Elemente im body an. */
+body {
+  font-family: Arial, Helvetica, sans-serif; /* Schriftfamilie */
+  font-size: 2rem; /* Schriftgröße */
+  line-height: 2rem; /* Zeilenabstand */
+}
+
+/* -----------------------------
+         BORDER RADIUS
+------------------------------ */
+/* Das Sternchen spricht alle Elemente im body an. */
+* {
+  border-radius: 5px; /* Rahmenradius 5px für alle Elemente im body. */
+}

@@ -1,0 +1,30 @@
+
+
+h1 {
+    animation: weight 4s infinite;
+    animation-delay: calc(var(--char-index) * 150ms);
+}
+
+
+
+@keyframes weight {
+    0% {
+        font-weight: 300;
+    }
+    50% {
+        font-weight: 700;
+    }
+    100% {
+        font-weight: 300;
+    }
+}
+
+span {
+
+    animation: weight 3s infinite; /* Die Animation läuft unendlich */
+    animation-play-state: paused; /* Startet pausiert */
+  }
+
+  span:hover {
+    animation-play-state: running; /* Animation startet bei Hover */
+  }

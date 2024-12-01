@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="de">
+	<!-- <!doctype html> und das html-Element mit Sprachkennzeichnung müssen immer vorhanden sein, damit die Seite funktioniert.-->
+
+	<head>
+		<meta charset="UTF-8" />
+		<!-- Durch dieses Element können Sonderzeichen angezeigt werden (z. B. äöüß oder Emojis) -->
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Browserkompatibilität -->
+
+		<title>Website Titel</title>
+		<!-- Titel der Seite. Wird im Browser Tab angezeigt. -->
+
+		<link href="assets/css/reset.css" type="text/css" rel="stylesheet" />
+		<link href="assets/css/style.css" type="text/css" rel="stylesheet" />
+		<!-- Verlinkung der CSS-Dateien -->
+	</head>
+
+	<!-- Im <body> ist alles, was im Browserfenster angezeigt wird. -->
+	<body>
+		<div class="svgbox">
+			<svg viewBox="0 0 1000 500">
+				<defs>
+					<style>
+						path {
+							mix-blend-mode: difference;
+						}
+					</style>
+					<radialGradient id="cls-1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+						<stop offset="0%" stop-color="red" stop-opacity="100%">
+							<animate attributeName="stop-color" values="blue;red;violet;blue" dur="6s" repeatCount="indefinite" />
+							<animate attributeName="stop-opacity" values="20%;30%;10%;60%;80%;30%;20%" dur="2s" repeatCount="indefinite" />
+						</stop>
+						<stop offset="100%" stop-color="blue" stop-opacity="100%">
+							<animate attributeName="stop-color" values="blue;yellow;blue;" dur="6s" repeatCount="indefinite" />
+						</stop>
+						<!-- <animate 
+					attributeName="fy"
+					values="0%;50%;100%;50%;0%"
+					dur="6s"
+					repeatCount="indefinite"
+					/> -->
+						<!-- <animate 
+					attributeName="fx"
+					values="0%;25%;60%;86%;0%"
+					dur="10s"
+					repeatCount="indefinite"
+					/> -->
+					</radialGradient>
+
+					<radialGradient id="cls-2" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+						<stop offset="0%" stop-color="red" stop-opacity="100%">
+							<animate attributeName="stop-color" values="blue;yellow;blue" dur="6s" repeatCount="indefinite" />
+							<animate attributeName="stop-opacity" values="100%;20%;50%; 30%;70%" dur="2s" repeatCount="indefinite" />
+						</stop>
+						<stop offset="100%" stop-color="blue" stop-opacity="100%">
+							<animate attributeName="stop-color" values="blue;yellow;blue;" dur="6s" repeatCount="indefinite" />
+						</stop>
+						<animate attributeName="fy" values="0%;50%;100%;50%;0%" dur="6s" repeatCount="indefinite" />
+						<animate attributeName="fx" values="0%;25%;60%;86%;0%" dur="10s" repeatCount="indefinite" />
+					</radialGradient>
+
+					<radialGradient id="cls-3" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+						<stop offset="0%" stop-color="red" stop-opacity="100%">
+							<animate attributeName="stop-color" values="blue;red;violet;blue" dur="6s" repeatCount="indefinite" />
+							<animate attributeName="stop-opacity" values="20%;30%;10%;60%;80%;30%;20%" dur="2s" repeatCount="indefinite" />
+						</stop>
+						<stop offset="100%" stop-color="blue" stop-opacity="100%">
+							<animate attributeName="stop-color" values="blue;yellow;blue;" dur="6s" repeatCount="indefinite" />
+						</stop>
+						<!-- <animate 
+					attributeName="fy"
+					values="0%;50%;100%;50%;0%"
+					dur="6s"
+					repeatCount="indefinite"
+					/> -->
+						<!-- <animate 
+					attributeName="fx"
+					values="0%;25%;60%;86%;0%"
+					dur="10s"
+					repeatCount="indefinite"
+					/> -->
+					</radialGradient>
+
+					<radialGradient id="gradkreis" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+						<stop offset="10%" stop-color="#fe7b9bff" />
+						<stop offset="95%" stop-color="violet" />
+					</radialGradient>
+					<filter id="blur">
+						<feColorMatrix in="SourceGraphic" type="hueRotate" values="180" />
+					</filter>
+
+					<filter id="blur2">
+						<feGaussianBlur stdDeviation="15" />
+						<!-- <feColorMatrix in="SourceGraphic" type="hueRotate" values="90"/> -->
+					</filter>
+
+					<filter id="blur3">
+						<feColorMatrix in="SourceGraphic" type="hueRotate" values="45" />
+					</filter>
+				</defs>
+
+				<circle cx="50" cy="110" r="230" fill="url(#gradkreis)">
+					<animate attributeName="r" dur="10s" repeatcount="indefinite" values="230;300;100;230" />
+				</circle>
+
+				<circle cx="200" cy="20" r="230" fill="url(#gradkreis)">
+					<animate attributeName="r" dur="10s" repeatcount="indefinite" values="200;100;200" />
+				</circle>
+
+				<path class="cls-1" d="M281,14s38.5,1.5,55,2,65-2,55,41-4,96-74,160c0,0,10,35-7,52s-77,86-132,63-134-51-139-54-39-9-6-39,119.5-62.5,143.5-59.5c0,0-9-26-7-52s17.5-83.5,28.5-98.5,38-19,83-15Z" fill="url(#cls-1)" filter="url(#blur2)">
+					<!-- <animateTransform 
+				attributeName="transform"
+				begin="0"
+				dur="3000ms"
+				type="rotate"
+				from="0 120 120"
+				to="360 120 120"
+				repeatCount="indefinite"
+				
+				/> -->
+					<animate
+						attributeName="d"
+						dur="6000ms"
+						repeatcount="indefinite"
+						values="
+					M281,14s38.5,1.5,55,2,65-2,55,41-4,96-74,160c0,0,10,35-7,52s-77,86-132,63-134-51-139-54-39-9-6-39,119.5-62.5,143.5-59.5c0,0-9-26-7-52s17.5-83.5,28.5-98.5,38-19,83-15Z;
+					M264.5,5.5s55,10,71.5,10.5,66.5-25.5,56.5,17.5-5.5,119.5-75.5,183.5c0,0,10,35-7,52s-97.5,104.5-152.5,81.5-75-47-80-50-36-45-3-75,78-49,102-46c0,0-30-29-28-55s58-51,69-66,2-57,47-53Z;
+					M281,14s50,0,66.5.5-37,70-47,113,86.5,25.5,16.5,89.5c0,0,30.5,19.5,13.5,36.5s-88,82-143,59-121-44-126-47-53-33-20-63,147-36,171-33c0,0-15-28-13-54s23-38,34-53,2.5-52.5,47.5-48.5Z;
+					M285.5,62.5s15.5.5,32,1,74-81,64-38,37,79-33,143c0,0-1,68-18,85s-77-12-132-35-116,53-121,50S-8.5,207.5,24.5,177.5s83-36,107-33c0,0,66-3,68-29s-8-55,3-70,38,13,83,17Z;
+					M140.5.76s83.5,59.5,100,60,41,17,31,60,49,46-21,110c0,0,33,22,16,39s-19,124-74,101-106-69-111-72-40-52-7-82S14.5,104.76,38.5,107.76c0,0,70,6,72-20s-21-33-10-48S95.5-3.24,140.5.76Z;
+					M338.5.62s28.5,6.5,45,7-68,104-78,147,69-14-1,50c0,0-48,4-65,21s-24,10-79-13-69-24-74-27-60,2-27-28-45-55-21-52c0,0,129,34,131,8s94-40,105-55S293.5-3.38,338.5.62Z;
+					M281,14s38.5,1.5,55,2,65-2,55,41-4,96-74,160c0,0,10,35-7,52s-77,86-132,63-134-51-139-54-39-9-6-39,119.5-62.5,143.5-59.5c0,0-9-26-7-52s17.5-83.5,28.5-98.5,38-19,83-15Z;
+					" />
+				</path>
+
+				<path id="blur" d="M281,14s38.5,1.5,55,2,65-2,55,41-4,96-74,160c0,0,10,35-7,52s-77,86-132,63-134-51-139-54-39-9-6-39,119.5-62.5,143.5-59.5c0,0-9-26-7-52s17.5-83.5,28.5-98.5,38-19,83-15Z" fill="url(#cls-2)" filter="url(#blur)">
+					<!-- <animateTransform 
+					attributeName="transform"
+					begin="0"
+					dur="3000ms"
+					type="rotate"
+					from="0 120 120"
+					to="360 120 120"
+					repeatCount="indefinite"
+					
+					/> -->
+					<animate
+						attributeName="d"
+						dur="9000ms"
+						repeatcount="indefinite"
+						values="
+						M281,14s38.5,1.5,55,2,65-2,55,41-4,96-74,160c0,0,10,35-7,52s-77,86-132,63-134-51-139-54-39-9-6-39,119.5-62.5,143.5-59.5c0,0-9-26-7-52s17.5-83.5,28.5-98.5,38-19,83-15Z;
+						M264.5,5.5s55,10,71.5,10.5,66.5-25.5,56.5,17.5-5.5,119.5-75.5,183.5c0,0,10,35-7,52s-97.5,104.5-152.5,81.5-75-47-80-50-36-45-3-75,78-49,102-46c0,0-30-29-28-55s58-51,69-66,2-57,47-53Z;
+						M281,14s50,0,66.5.5-37,70-47,113,86.5,25.5,16.5,89.5c0,0,30.5,19.5,13.5,36.5s-88,82-143,59-121-44-126-47-53-33-20-63,147-36,171-33c0,0-15-28-13-54s23-38,34-53,2.5-52.5,47.5-48.5Z;
+						M285.5,62.5s15.5.5,32,1,74-81,64-38,37,79-33,143c0,0-1,68-18,85s-77-12-132-35-116,53-121,50S-8.5,207.5,24.5,177.5s83-36,107-33c0,0,66-3,68-29s-8-55,3-70,38,13,83,17Z;
+						M140.5.76s83.5,59.5,100,60,41,17,31,60,49,46-21,110c0,0,33,22,16,39s-19,124-74,101-106-69-111-72-40-52-7-82S14.5,104.76,38.5,107.76c0,0,70,6,72-20s-21-33-10-48S95.5-3.24,140.5.76Z;
+						M338.5.62s28.5,6.5,45,7-68,104-78,147,69-14-1,50c0,0-48,4-65,21s-24,10-79-13-69-24-74-27-60,2-27-28-45-55-21-52c0,0,129,34,131,8s94-40,105-55S293.5-3.38,338.5.62Z;
+						M281,14s38.5,1.5,55,2,65-2,55,41-4,96-74,160c0,0,10,35-7,52s-77,86-132,63-134-51-139-54-39-9-6-39,119.5-62.5,143.5-59.5c0,0-9-26-7-52s17.5-83.5,28.5-98.5,38-19,83-15Z;
+						" />
+				</path>
+
+				<path class="cls-3" d="M281,14s38.5,1.5,55,2,65-2,55,41-4,96-74,160c0,0,10,35-7,52s-77,86-132,63-134-51-139-54-39-9-6-39,119.5-62.5,143.5-59.5c0,0-9-26-7-52s17.5-83.5,28.5-98.5,38-19,83-15Z" fill="url(#cls-3)" filter="url(#blur3)">
+					<!-- <animateTransform 
+				attributeName="transform"
+				begin="0"
+				dur="3000ms"
+				type="rotate"
+				from="0 120 120"
+				to="360 120 120"
+				repeatCount="indefinite"
+				
+				/> -->
+					<animate
+						attributeName="d"
+						dur="12000ms"
+						repeatcount="indefinite"
+						values="
+					M281,14s38.5,1.5,55,2,65-2,55,41-4,96-74,160c0,0,10,35-7,52s-77,86-132,63-134-51-139-54-39-9-6-39,119.5-62.5,143.5-59.5c0,0-9-26-7-52s17.5-83.5,28.5-98.5,38-19,83-15Z;
+					M264.5,5.5s55,10,71.5,10.5,66.5-25.5,56.5,17.5-5.5,119.5-75.5,183.5c0,0,10,35-7,52s-97.5,104.5-152.5,81.5-75-47-80-50-36-45-3-75,78-49,102-46c0,0-30-29-28-55s58-51,69-66,2-57,47-53Z;
+					M281,14s50,0,66.5.5-37,70-47,113,86.5,25.5,16.5,89.5c0,0,30.5,19.5,13.5,36.5s-88,82-143,59-121-44-126-47-53-33-20-63,147-36,171-33c0,0-15-28-13-54s23-38,34-53,2.5-52.5,47.5-48.5Z;
+					M285.5,62.5s15.5.5,32,1,74-81,64-38,37,79-33,143c0,0-1,68-18,85s-77-12-132-35-116,53-121,50S-8.5,207.5,24.5,177.5s83-36,107-33c0,0,66-3,68-29s-8-55,3-70,38,13,83,17Z;
+					M140.5.76s83.5,59.5,100,60,41,17,31,60,49,46-21,110c0,0,33,22,16,39s-19,124-74,101-106-69-111-72-40-52-7-82S14.5,104.76,38.5,107.76c0,0,70,6,72-20s-21-33-10-48S95.5-3.24,140.5.76Z;
+					M338.5.62s28.5,6.5,45,7-68,104-78,147,69-14-1,50c0,0-48,4-65,21s-24,10-79-13-69-24-74-27-60,2-27-28-45-55-21-52c0,0,129,34,131,8s94-40,105-55S293.5-3.38,338.5.62Z;
+					M281,14s38.5,1.5,55,2,65-2,55,41-4,96-74,160c0,0,10,35-7,52s-77,86-132,63-134-51-139-54-39-9-6-39,119.5-62.5,143.5-59.5c0,0-9-26-7-52s17.5-83.5,28.5-98.5,38-19,83-15Z;
+					" />
+				</path>
+
+				<path id="wave-text" d="M281,14s38.5,1.5,55,2,65-2,55,41-4,96-74,160c0,0,10,35-7,52s-77,86-132,63-134-51-139-54-39-9-6-39,119.5-62.5,143.5-59.5c0,0-9-26-7-52s17.5-83.5,28.5-98.5,38-19,83-15" fill="none"></path>
+				<text>
+					<textPath href="#wave-text" startOffset="100" data-offset="100">
+						<tspan>Hallo</tspan>
+					</textPath>
+					<textPath href="#wave-text" startOffset="150" data-offset="150">
+						<tspan>Es scrollt einfach nicht</tspan>
+					</textPath>
+					<textPath href="#wave-text" startOffset="320" data-offset="320">
+						<tspan>Was soll das</tspan>
+					</textPath>
+				</text>
+			</svg>
+		</div>
+		<script src="assets/js/script.js"></script>
+		<!-- Verlinkung der Javascript Dateien -->
+	</body>
+</html>
+<!-- Schließendes html-Element nicht vergessen! -->

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="de">
+	<!-- <!doctype html> und das html-Element mit Sprachkennzeichnung müssen immer vorhanden sein, damit die Seite funktioniert.-->
+
+	<head>
+		<meta charset="UTF-8" />
+		<!-- Durch dieses Element können Sonderzeichen angezeigt werden (z. B. äöüß oder Emojis) -->
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Browserkompatibilität -->
+
+		<title>Fluid Typography – Variable Fonts in Bewegung</title>
+		<!-- Titel der Seite. Wird im Browser Tab angezeigt. -->
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet" />
+		<!-- Hier wird die Google Font Fredoka eingebunden.  -->
+
+		<link href="assets/css/splitting.css" type="text/css" rel="stylesheet" />
+		<!-- Hier wird die CSS-Datei für Splitting.js eingebunden.  -->
+		<link href="assets/css/reset.css" type="text/css" rel="stylesheet" />
+		<link href="assets/css/style.css" type="text/css" rel="stylesheet" />
+		<!-- Verlinkung der CSS-Dateien -->
+	</head>
+
+	<!-- Im <body> ist alles, was im Browserfenster angezeigt wird. -->
+	<body>
+		<!-- Das ist der Header -->
+		<header class="article-header">
+			<h2 class="article-title"><span data-splitting="chars">
+				takete, <br>maluma, <br>bouba, <br>kiki, <br>askew, <br>goro <br>goro, <br>kira <br>kira, <br>tsuru <br>tsuru, <br>and <br>beyond</span></h2>
+			<div class="article-author">kiki, bouba, and beyond</div>
+			<div class="name-author">written by <a href="https://laurelschwulst.com/e/kiki-bouba-and-beyond/" target="_blank">laurel schwulst</a></div>
+			
+			<section class="single-article-footnotes-wrapper">
+				<ul class="footnotes-list">
+					<lis>special thanks to the surfacing team at the times — tala safie, josephine sedgewick, alicia desantis, alice fang, and amanda webster. and to kelly mccormick, aditya shukla, mami nakanishi, max bittker, and meg miller.</li>
+				</ul>
+			</section>
+		</header>
+		
+		<article>
+			<!-- Das ist der Artikel -->
+			<section class="article-content">
+				<div class="image-text">
+					<p class="intro">maybe you’ve heard of the “kiki/bouba” effect—it’s a classic psycho-linguistics experiment that explores the relationship between nonsense words and abstract shapes.
+				</div>
+				<img class="kiki" src="assets/img/kiki.svg"> <img class="bouba" src="assets/img/bouba.svg">
+				
+				<h3 class="chapter-headline">takete & maluma</h3>
+				<div class="image-text"><p>the psychologist wolfgang kohler observed the phenomenon in the late 1920s, using the made-up words “takete” and “maluma.”
+					with this experiment köhler demonstrated an inherent human tendency to match certain sounds to shapes—as most people considered the angular shape “takete” and the rounder one “maluma.”</p>
+					<p>köhler’s original study only tested spanish speakers. in the early 2000s, vilayanur ramachandran and edward hubbard, two researchers at the university of california san diego, wanted to see if the findings applied to a broader group of people. this time using the words “bouba” and “kiki,” they tested american college undergraduates and tamil speakers in india.
+					</p>
+					<p>they found overwhelming majorities (95 percent to 98 percent) in both groups who agreed on which shapes were “kiki” and which were “bouba.” the results suggested a universality to the effect that the köhler study originally documented. that is, most people—regardless of language or cultural background—agree the spiky, jagged shape is “kiki,” while the blobby, curvy one is “bouba.”</p>
+				</div>
+
+				<!-- Das ist eine Zwischenüberschrift -->
+				<h3 class="chapter-headline">kiki & bouba</h3>
+				<div class="image-text">
+					<p>
+						why so many of us are in agreement on these words isn’t entirely clear, but there are some theories. in a 2014 article in the academic journal language and speech, annette d’onofrio, an assistant professor of linguistics at northwestern university, attributed the phenomenon to the shape our mouths make when we say “kiki” and “bouba.” with “bouba,” our lips are rounded and our oral cavity is open; whereas our lips become tight and constrained when we pronounce “kiki.” when spoken aloud, the word “kiki” uses more energy, as seen in spectrograms.</p>
+				</div>
+
+				<!-- Das ist eine Zwischenüberschrift -->
+				<h3 class="chapter-headline">askew</h3>
+				<div class="image-text">
+					<p>studies continue to explore the kiki/bouba effect and what we can learn from it. in her doctoral research at emory university, kelly mccormick, a cognitive scientist, asked, “what is the underlying neurological processing for feeling like something is a good match?” she keeps a list of words whose meanings she feels relate to their pronunciation. for example, she said, “i love askew. i think about askew all the time. it sounds like what it means.”</p>
+				</div>
+
+				<h3 class="chapter-headline">goro goro, kira kira <br>& tsuru tsuru</h3>
+				<div class="image-text">
+					<p>different languages vary in how the sounds of words convey meaning. japanese is one that is rich in sensory vocabulary, mccormick said. there are terms for the rolling sound of thunder (goro goro, ごろごろ), the flickering light off a pond (kira kira, きらきら) and the slippery but firm feeling of a fish’s scales (tsuru tsuru, つるつる). “the language you speak affects the way you think,” she said.</p>
+				</div>
+				
+				<h3 class="chapter-headline">and beyond</h3>
+				<div class="image-text">
+					<p>aditya shukla, who writes about psychology on his site cognition today, sees opportunity in applying the kiki/bouba phenomenon in other ways. “as humans, we biologically evolved to take in information from all our senses,” he said. “the kiki/bouba phenomenon shows how we find patterns in sensory information, and how one sense can help another.”</p>
+					<p>in addition to writing, shukla also plays guitar. “kiki/bouba demonstrates something musicians and artists constantly use,” he said. “they are always understanding the world in abstract and multi-sensorial ways.”</p>
+					<p>thinking about the “acoustics” of the two words, and how we describe sensations that are hard to identify, could help us share something previously unexplainable.</p>
+				</div>
+		</article>
+		<script src="assets/js/splitting.min.js"></script>
+		<!-- Verlinkung der Splitting.js Library -->
+		<script src="assets/js/script.js"></script>
+		<!-- Verlinkung der Javascript Dateien -->
+	</body>
+</html>
+<!-- Schließendes html-Element nicht vergessen! -->

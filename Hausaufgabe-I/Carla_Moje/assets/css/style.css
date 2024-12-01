@@ -1,0 +1,159 @@
+/* -----------------------------
+           BOX MODEL
+------------------------------ */
+
+html {
+	margin: 2rem;
+}
+
+header,
+nav {
+	margin: 1rem 0 2rem;
+}
+
+footer {
+	margin: 2rem 0 1rem 0;
+}
+
+p,
+ul,
+div {
+	margin-top: 2rem;
+}
+
+li {
+	margin-top: 1rem;
+	list-style: none; /* Aufzählungszeichen, Standard: disc */
+}
+
+body {
+	padding: 1rem 2rem;
+}
+
+section {
+	padding: 2rem;
+}
+
+p,
+ul,
+li,
+h1,
+div,
+header,
+nav,
+footer {
+	padding: 1rem;
+}
+
+.red,
+a {
+	padding: 0.5rem;
+}
+
+header,
+nav,
+footer {
+	height: 6rem;
+}
+
+/* -----------------------------
+            COLORS
+------------------------------ */
+
+.red {
+	color: rgb(255, 3, 3); /* Schriftfarbe */
+	background-color: rgb(254, 191, 191); /* Hintergrundfarbe */
+	border: 5px dotted rgb(255, 0, 0); /* Rahmen: Breite, Beschaffenheit, Farbe  */
+}
+
+a {
+	color: #000;
+	background-color: rgb(214, 253, 71);
+	border: 5px dotted rgb(91, 117, 0);
+}
+
+html {
+	background-color: rgb(157, 255, 232);
+}
+
+body {
+	background-color: rgb(144, 238, 197);
+	border: 15px solid rgb(0, 224, 172);
+}
+
+section {
+	background-color: rgb(123, 183, 233);
+	border: 5px solid rgb(0, 76, 208);
+}
+
+header {
+	background-color: rgb(239, 186, 247);
+	border: 5px solid rgb(247, 0, 255);
+}
+
+nav {
+	background-color: rgb(208, 170, 244);
+	border: 5px solid rgb(151, 15, 204);
+}
+
+footer {
+	background-color: rgb(239, 186, 247);
+	border: 5px solid rgb(247, 0, 255);
+}
+
+h1,
+ul,
+li,
+p,
+div {
+	background-color: rgb(151, 245, 241);
+	border: 5px solid rgb(1, 142, 138);
+}
+
+/* -----------------------------
+        PSEUDO-KLASSEN
+------------------------------ */
+/* :hover wird aktiviert, wenn man mit der Maus über den Link fährt, :active, wenn der Link gedrückt wird. */
+a:hover,
+a:active {
+	color: rgb(0, 0, 255);
+}
+
+/* -----------------------------
+          TYPOGRAPHY
+------------------------------ */
+/* Das body Element spricht alle Inline-Level-Elemente im body an. */
+body {
+	font-family: Arial, Helvetica, sans-serif; /* Schriftfamilie */
+	font-size: 1.5rem; /* Schriftgröße */
+	line-height: 2rem; /* Zeilenabstand */
+}
+
+header{
+	font-size: 3em;
+}
+
+nav{
+	font-size: 3em;
+	text-align: center;
+}
+
+section{
+	font-size: 3em;
+}
+
+.ghost{
+	font-size: 4em;
+}
+
+footer{
+	font-size: 3em;
+}
+
+/* -----------------------------
+         BORDER RADIUS
+------------------------------ */
+/* Das Sternchen spricht alle Elemente im body an. */
+* {
+	border-radius: 5px; /* Rahmenradius 5px für alle Elemente im body. */
+}

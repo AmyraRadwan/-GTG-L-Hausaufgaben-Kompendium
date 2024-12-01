@@ -1,0 +1,307 @@
+/* -----------------------------
+        FONT-FILE IMPORTS
+------------------------------ */
+
+/* Von Google in CSS einbinden */
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Grenze+Gotisch:wght@100..900&family=Pixelify+Sans:wght@400..700&display=swap");
+
+/* True-Type Format einbinden */
+@font-face {
+	font-family: "Grenze Gotisch";
+	src: url("../fonts/GrenzeGotisch-VariableFont_wght.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* -----------------------------
+        GLOBALE STYLES 
+------------------------------ */
+
+html {
+	font-size: 1vw; /* Festlegen der globalen Schriftgröße, für responsives Design */
+}
+
+body {
+	font-family: "Grenze Gotisch", serif; /* Festlegen der globalen Schrift */
+
+	background-color: #ffffff;
+	opacity: 1;
+	background-image: radial-gradient(#000000 2px, #ffffff 2px);
+	background-size: 40px 40px;
+}
+article {
+	padding: 2rem;
+	margin: 2rem;
+}
+/* -----------------------------
+        TYPENSCHILDER
+------------------------------ */
+
+.article-type,
+.footnotes-label {
+	font-size: 1.3rem;
+	font-weight: 700;
+	line-height: 0.9;
+	border-radius: 3rem;
+	background-color: #4b1bd0;
+	border: 0.3rem dashed white;
+	color: white;
+	display: inline-block;
+	padding: 0.6rem;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.footnotes-label {
+	border-radius: 3rem;
+	background-color: #4b1bd0;
+	padding: 0.5rem;
+	border: 0.3rem dashed white;
+	margin-bottom: 0rem !important;
+	margin-top: 1.5rem !important;
+}
+
+/* -----------------------------
+         ÜBERSCHRIFTEN
+------------------------------ */
+/* Titel des Artikels */
+.article-title span,
+.article-subtitle span {
+	font-family: "Pixelify Sans", sans-serif;
+	font-size: 6.5rem;
+	line-height: 0.8;
+	font-weight: 100;
+	letter-spacing: -0.02rem;
+	margin: 0.7rem;
+	animation: weight 3s infinite;
+	animation-delay: calc(var(--char-index) * 150ms);
+}
+
+@keyframes weight {
+	from {
+		font-weight: 100;
+	}
+
+	50% {
+		font-weight: 900;
+	}
+
+	to {
+		font-weight: 100;
+	}
+}
+
+/* Untertitel des Artikels */
+h3.article-subtitle {
+	font-family: "Pixelify Sans", sans-serif;
+	font-size: 6rem;
+	padding-left: 5rem;
+}
+h3.article-subtitle::before {
+	content: "–";
+	letter-spacing: -1em;
+	padding-right: 0.7em;
+	padding-left: 0.9em;
+}
+
+/* Namen der Autoren */
+div.article-author {
+	font-size: 1.6rem;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+	padding-top: 1rem;
+	padding-bottom: 4rem;
+	color: #4b1bd0;
+}
+
+/* Zwischenüberschriften */
+h3.chapter-headline {
+	font-family: "Pixelify Sans", sans-serif;
+	font-style: normal;
+	color: #4b1bd0;
+	font-size: 4.5rem;
+	font-weight: 100;
+	line-height: 0.8;
+	padding-bottom: 0.5rem;
+	letter-spacing: 0.01em;
+	margin-top: 4rem;
+	animation: weighth3 3s infinite;
+	animation-delay: calc(var(--char-index) * 150ms);
+	text-decoration: underline;
+	text-decoration-style: solid;
+	text-align: center;
+}
+@keyframes weighth3 {
+	from {
+		font-weight: 100;
+	}
+
+	50% {
+		font-weight: 900;
+	}
+
+	to {
+		font-weight: 100;
+	}
+}
+/* -----------------------------
+              TEXT
+------------------------------ */
+
+p {
+	margin: 0;
+	hyphens: auto;
+	/* Nicht mehr als 2 aufeinanderfolgende Zeilen 
+	die mit einem Bindestrich enden  */
+	hyphenate-limit-lines: 2;
+	-ms-hyphenate-limit-lines: 2;
+	-webkit-hyphenate-limit-lines: 2;
+	/* Trenne nur Wörter mit mehr als 6 Zeichen,
+     Lasse min. 3 Zeichen vor dem Trennstrich und min. 2 danach */
+	hyphenate-limit-chars: 6 3 3;
+	-ms-hyphenate-limit-chars: 6 3 3;
+	-webkit-hyphenate-limit-chars: 6 3 3;
+}
+.article-content p {
+	font-size: 4rem;
+	line-height: 1;
+	letter-spacing: -0.04em;
+}
+/* Text wird eingerückt wenn zwei p-Elemente aufeinander folgen. */
+.article-content p + p {
+	text-indent: 3rem;
+}
+
+/* .intro {
+  margin-top: 3rem;
+  font-size: 4rem !important;
+  line-height: 3.3rem !important;
+} */
+/* -----------------------------
+       TEXTAUSZEICHNUNG
+------------------------------ */
+/* Links */
+a {
+	text-decoration: underline;
+	text-decoration-style: solid;
+	text-decoration-color: #4b1bd0;
+	text-decoration-thickness: 0.2rem;
+	text-underline-offset: 0.2rem;
+}
+
+a:hover {
+	color: #eb0909;
+	text-decoration-color: #4b1bd0;
+}
+
+/* Unterstrichener Text */
+.underline {
+	text-decoration: underline;
+	text-decoration-style: solid;
+	text-decoration-color: #6c4f24;
+	text-decoration-thickness: 0.2rem;
+	text-underline-offset: 0.2rem;
+	color: #6c4f24;
+}
+
+/* Kursiver Text */
+em {
+	font-style: italic;
+}
+p::first-letter {
+	font-size: 200%;
+	font-weight: bold;
+	color: #eb0909;
+}
+/* Hervorgehobenes Zitat */
+blockquote {
+	background-color: #4b1bd0;
+	border: 0.7rem dashed white;
+	color: white;
+	font-size: 3rem;
+	text-align: center;
+	text-rendering: geometricPrecision;
+	padding: 1rem 1rem 1rem 1rem;
+	margin: 3rem auto;
+	margin-bottom: 1rem;
+	border-radius: 4rem;
+	width: 70%;
+}
+
+/* Bildunterschriften */
+.article-content figure figcaption {
+	margin: 0.7rem 0;
+	background-color: #fefefe;
+	font-size: 1rem;
+	line-height: 1.3;
+	letter-spacing: 0.01em;
+	color: #eb0909;
+	text-align: center;
+	background-color: #fefefe;
+}
+
+/* .article-content figure figcaption a {
+  text-decoration-thickness: 0.01rem;
+  color: #6c4f24;
+} */
+
+/* Fußnotenzahlen im Fließtext */
+sup {
+	font-family: "Grenze Gotisch", sans-serif;
+	font-size: 0.6em;
+	color: #eb0909;
+	vertical-align: baseline;
+	line-height: 0;
+	position: relative;
+	top: -0.7em;
+}
+/* Fußnoten Liste */
+ul.footnotes-list {
+	font-family: "", sans-serif;
+	font-size: 1rem;
+	line-height: 1.2rem;
+	list-style: none;
+	margin-top: 1rem;
+	padding: 0;
+	width: 70ch;
+}
+ul.footnotes-list li {
+	text-indent: -0.9rem;
+	margin-left: 2.5rem;
+	margin: 0;
+	padding: 0;
+}
+
+.footnotes-number {
+	color: #eb0909;
+	font-family: Grenze Gotisch;
+	font-size: 2rem;
+}
+
+/* -----------------------------
+             BILDER
+------------------------------ */
+
+figure {
+	margin-top: 0.6rem;
+	margin-right: 1rem;
+	background-color: #fefefe;
+}
+
+.in-text-image {
+	width: 45%;
+	float: left;
+	border: 0.5rem dashed #4b1bd0;
+}
+
+.in-text-image.right {
+	float: right;
+	margin-top: 0.6rem;
+	margin-right: 0;
+	margin-left: 1rem;
+}
+
+.in-text-image img {
+	width: 100%;
+	height: auto;
+}

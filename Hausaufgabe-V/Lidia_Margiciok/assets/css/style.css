@@ -1,0 +1,214 @@
+/* -----------------------------
+        FONT-FILE IMPORTS
+------------------------------ */
+
+/* Von Google in CSS einbinden */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+/* True-Type Format einbinden */
+@font-face {
+	font-family: "Bandeins Strange";
+	src: url("../fonts/BandeinsStrangeVariableGX.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Woff2- & Woff-Format einbinden */
+@font-face {
+	font-family: "Review Mono";
+	src:
+		url("../fonts/ReviewMonoRegular.woff2") format("woff2"),
+		url("../fonts/ReviewMonoRegular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+/* Der kursive Schnitt wird als »font-style:italic« eingebunden */
+@font-face {
+	font-family: "Review Mono";
+	src:
+		url("../fonts/ReviewMonoCursive.woff2") format("woff2"),
+		url("../fonts/ReviewMonoCursive.woff") format("woff");
+	font-weight: normal;
+	font-style: italic;
+}
+
+/* -----------------------------
+        GLOBALE STYLES 
+------------------------------ */
+
+html {
+	font-size: 1vw; /* Festlegen der globalen Schriftgröße, für responsives Design */
+}
+
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif; /* Festlegen der globalen Schrift */
+	background-color: #fffff2; /* Festlegen der Hintergrundfarbe */
+}
+
+article {
+	padding: 4rem;
+	margin: 2rem;
+}
+
+.blink {
+	color: blue;
+	font-size: 3rem;
+	font-family: "Courier New", Courier, monospace;
+	text-decoration: underline 0.02rem;
+	animation-name: animation_blink;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes animation_blink {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* -----------------------------
+         ÜBERSCHRIFTEN
+------------------------------ */
+/* Titel des Artikels */
+.article-title span,
+.article-subtitle span {
+	font-family: "Londrina Outline", sans-serif;
+	font-size: 6rem;
+	line-height: 1;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: -0.02rem;
+	margin: 0;
+	animation: weight 6s infinite;
+	animation-delay: calc(var(--char-index) * 150ms);
+	color: blue;
+}
+
+.article-title {
+	text-align: left;
+}
+
+.article-subtitle {
+	text-align: right;
+}
+
+@keyframes weight {
+	from {
+		font-weight: 100;
+	}
+
+	50% {
+		font-weight: 900;
+	}
+
+	to {
+		font-weight: 100;
+	}
+}
+
+/* Untertitel des Artikels */
+h3.article-subtitle {
+	font-family: "Fredoka", sans-serif;
+	font-size: 6rem;
+	color: blue;
+	text-align: right;
+}
+h3.article-subtitle::before {
+	letter-spacing: -1em;
+	padding-right: 0.7em;
+	padding-left: 0.9em;
+}
+
+/* Namen der Autoren */
+div.article-author {
+	font-size: 1.6rem;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	padding-top: 1rem;
+	padding-bottom: 4rem;
+	color: #6c4f24;
+	text-align: center;
+}
+
+/* Zwischenüberschriften */
+h3.chapter-headline {
+	font-family: "Review Mono", sans-serif;
+	font-style: italic;
+	color: #fffff2;
+	font-size: 2.5rem;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+	letter-spacing: 0.01em;
+	margin-top: calc(2.5rem * 2);
+	text-align: center;
+	background-color: blue;
+	border: 4px dotted #fffff2;
+}
+
+/* -----------------------------
+              TEXT
+------------------------------ */
+
+p {
+	margin: 0;
+	hyphens: auto;
+	/* Nicht mehr als 2 aufeinanderfolgende Zeilen 
+	die mit einem Bindestrich enden  */
+	hyphenate-limit-lines: 2;
+	-ms-hyphenate-limit-lines: 2;
+	-webkit-hyphenate-limit-lines: 2;
+	/* Trenne nur Wörter mit mehr als 6 Zeichen,
+     Lasse min. 3 Zeichen vor dem Trennstrich und min. 2 danach */
+	hyphenate-limit-chars: 6 3 3;
+	-ms-hyphenate-limit-chars: 6 3 3;
+	-webkit-hyphenate-limit-chars: 6 3 3;
+}
+.article-content p {
+	font-size: 2.2rem;
+	letter-spacing: -0.04em;
+	color: blue;
+	text-align: block, center;
+}
+/* Text wird eingerückt wenn zwei p-Elemente aufeinander folgen. */
+.article-content p + p {
+	text-indent: 3rem;
+}
+
+/* --------------------------------------
+             BILDER IN TEXT EINGEBUNDEN
+------------------------------------------*/
+
+/*--figure {
+	margin-top: 0.6rem;
+	margin-right: 3rem;
+} 
+
+.in-text-image {
+	width: 40%;
+	float: left;
+}
+
+.in-text-image.right {
+	float: right;
+	margin-top: 0.6rem;
+	margin-right: 0;
+	margin-left: 2rem;
+}
+
+.in-text-image img {
+	width: 100%;
+	height: auto;
+}
+------*/
+
+.in-text-image {
+	text-align: center;
+}

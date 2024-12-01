@@ -1,0 +1,168 @@
+/* -------------------------------------
+		   CSS-GRID & FLEX
+-------------------------------------- */
+@font-face {
+	font-family: NeueHaas;
+	src: url("../../NeueHaasDisplayLight.ttf");
+}
+@font-face {
+	font-family: Boris;
+	src: url("../../Boris.ttf");
+}
+
+@font-face {
+	font-family: Arco;
+	src: url("../../arco.otf");
+}
+
+@font-face {
+	font-family: Apple;
+	src: url("../../AppleGaramond-LightItalic.ttf");
+}
+
+@font-face {
+	font-family: Glora;
+	src: url("../../GloraMedium.ttf");
+}
+
+@font-face {
+	font-family: Handwriting;
+	src: url("../../handwriting.ttf");
+}
+
+@font-face {
+	font-family: MrStalwart;
+	src: url("../../MrStalwart.ttf");
+}
+
+@font-face {
+	font-family: Perfume;
+	src: url("../../perfume.ttf");
+}
+
+@font-face {
+	font-family: Florence;
+	src: url("../../Florence-Regular.ttf");
+}
+
+.grid {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000;
+	font-size: 0.7rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+/* Setzt die Hintergrundfarbe der gesamten Webseite auf ein helles Grau */
+body {
+	background-color: #faf7ed;
+}
+
+h1 {
+	font-family: Boris;
+	font-size: 2.5rem;
+	color: rgb(0, 0, 139);
+	text-align: center;
+	padding-top: 30px;
+}
+
+/* -------------------------------------
+		     CSS-ANIMATION
+-------------------------------------- */
+.wrapper {
+	position: relative;
+	animation: floating 360s infinite alternate;
+}
+@keyframes floating {
+	0% {
+		left: 0;
+		top: 0;
+	}
+	100% {
+		left: 100%;
+		top: 240px;
+	}
+}
+@keyframes fontChange {
+	0% {
+		font-family: "Boris";
+	}
+	20% {
+		font-family: "Apple";
+	}
+	40% {
+		font-family: "Glora";
+	}
+	60% {
+		font-family: "Handwriting";
+	}
+	80% {
+		font-family: "Florence";
+	}
+	100% {
+		font-family: "Boris" ‚; /* Zurück zu Arial */
+	}
+}
+
+h1 {
+	animation: fontChange 1s infinite;
+	text-align: center;
+}
+.c3 {
+	display: none;
+	position: absolute;
+	top: 0;
+	color: rgb(232, 118, 177);
+	z-index: -1;
+	font-family: Boris;
+}
+
+.c2 {
+	display: none;
+}
+
+.c1 {
+	cursor: pointer; /* Zeigt an, dass es interaktiv ist */
+	font-family: NeueHaas;
+	color: rgb(0, 0, 139);
+}
+
+.c1:hover + .c2 + .c3 {
+	display: block !important;
+}
+
+.c1:hover {
+	opacity: 0;
+	z-index: 100;
+}
+.c2 {
+	opacity: 0;
+}
+
+@keyframes appearDisappear {
+	0%,
+	49.9% {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+	50%,
+	100% {
+		opacity: 0;
+	}
+}
+
+/* -------------------------------------
+		     IMAGE-SIZING
+-------------------------------------- */
+
+.cell img {
+	max-width: 3rem;
+}

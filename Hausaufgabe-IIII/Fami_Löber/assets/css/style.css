@@ -1,0 +1,39 @@
+html {
+  background-color: rgb(255, 247, 0);
+}
+
+/* svg {
+  width: 50%;
+  height: auto;
+} */
+
+/* #Miro {
+  position: relative;
+  width: 100%;
+  height: auto;
+
+} */
+
+/* image{
+  height: 140%;
+  width: auto;
+  color: blue;} */
+body {
+  margin: 0;
+  height: 200vh;
+  background: #f5f536;
+}
+textPath {
+  fill: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+textPath {
+  font-size: 0.7rem;
+}
+
+svg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}

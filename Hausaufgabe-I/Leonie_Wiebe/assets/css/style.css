@@ -1,0 +1,21 @@
+/* -----------------------
+BOX MODELL
+------------------------*/
+html {
+  margin: 2rem;
+}
+header {
+  margin: 1rem 0 2rem;
+}
+footer {
+  margin: 2rem 0 1rem 0;
+}
+
+/*------------------------
+COLORS
+-------------------------*/
+.red {
+  color: blue;
+  background-color: bisque;
+  border: 2px solid black;
+}

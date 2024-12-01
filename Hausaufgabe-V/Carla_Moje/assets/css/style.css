@@ -1,0 +1,360 @@
+/* -----------------------------
+        FONT-FILE IMPORTS
+------------------------------ */
+
+/* Von Google in CSS einbinden */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+/* True-Type Format einbinden */
+@font-face {
+	font-family: "Bandeins Strange";
+	src: url("../fonts/BandeinsStrangeVariableGX.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Woff2- & Woff-Format einbinden */
+@font-face {
+	font-family: "Review Mono";
+	src:
+		url("../fonts/ReviewMonoRegular.woff2") format("woff2"),
+		url("../fonts/ReviewMonoRegular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+/* Der kursive Schnitt wird als »font-style:italic« eingebunden */
+@font-face {
+	font-family: "Review Mono";
+	src:
+		url("../fonts/ReviewMonoCursive.woff2") format("woff2"),
+		url("../fonts/ReviewMonoCursive.woff") format("woff");
+	font-weight: normal;
+	font-style: italic;
+}
+
+/* Eigene eingefügte variable Font */
+
+@font-face {
+	font-family: "Fraunces";
+	src: url("../fonts/Fraunces[SOFT\,WONK\,opsz\,wght].woff2") format("woff2");
+	font-weight: 100 900; /* Unterstützte Gewichtsspanne */
+	font-style: normal;
+}
+@font-face {
+	font-family: "Fraunces";
+	src: url("../fonts/Fraunces-Italic[SOFT\,WONK\,opsz\,wght].woff2") format("woff2");
+	font-weight: 100 900; /* Unterstützte Gewichtsspanne */
+	font-style: italic;
+}
+/* Eigene eingefügte variable Font - davon statische version */
+
+@font-face {
+	font-family: "Fraunces-Regular";
+	src: url("../fonts/Fraunces9pt-Regular.woff2") format("woff2"); /* Unterstützte Gewichtsspanne */
+	font-style: normal;
+}
+
+/* -----------------------------
+        GLOBALE STYLES 
+------------------------------ */
+
+html {
+	font-size: 1vw; /* Festlegen der globalen Schriftgröße, für responsives Design */
+}
+
+body {
+	font-family: "Fraunces-Regular", serif; /* Festlegen der globalen Schrift */
+	background-color: #fffff2; /* Festlegen der Hintergrundfarbe */
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+article {
+	padding: 2rem;
+	margin: 2rem;
+	margin-right: 1rem;
+	margin-left: 1.5rem;
+	margin-top: 0;
+}
+
+header {
+	margin-left: 2.4rem;
+	margin-top: 3.6rem;
+}
+
+img.kiki {
+	width: 40%;
+	display: inline-block;
+	margin-left: 2rem;
+	margin-right: 2rem;
+	margin-top: 2.7rem;
+	color: red;
+	animation: rotate-kiki 3s linear infinite;
+}
+
+@keyframes rotate-kiki {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+img.bouba {
+	width: 40%;
+	display: inline-block;
+	margin-left: 2rem;
+	margin-right: 2rem;
+	animation: rotate-bouba 5s linear infinite;
+}
+
+@keyframes rotate-bouba {
+	from {
+		transform: rotate(360deg);
+	}
+	to {
+		transform: rotate(0deg);
+	}
+}
+
+/* -----------------------------
+        TYPENSCHILDER
+------------------------------ */
+
+.article-type,
+.footnotes-label {
+	font-size: 1.3rem;
+	font-weight: 700;
+	line-height: 0.9;
+	border-radius: 0.5rem;
+	background-color: #6c4f24;
+	color: #fffff2;
+	display: inline-block;
+	padding: 0.7rem 0.7rem 0.5rem 0.7rem;
+	margin-bottom: 2rem;
+}
+
+.footnotes-label {
+	margin-bottom: 0rem !important;
+	margin-top: 2rem !important;
+}
+
+/* -----------------------------
+         ÜBERSCHRIFTEN
+------------------------------ */
+/* Titel des Artikels */
+.article-title span,
+.article-subtitle span {
+	font-family: "Fraunces";
+	font-style: italic;
+	font-size: 12.5rem;
+	line-height: 1.1;
+	border-top: 1px solid black;
+	font-variation-settings:
+		"wght" 100,
+		/* Gewicht */ /*"opsz" 9,*/ /* Breite */ "SOFT" 0,
+		/* Schräge */ "WONK" 1; /* Optische Größe */
+	letter-spacing: -0.02rem;
+	margin: 0;
+	animation: weight 2.5s infinite;
+	animation-delay: calc(var(--char-index) * 150ms);
+}
+
+@keyframes weight {
+	from {
+		font-variation-settings:
+			"wght" 100,
+			/*"opsz" 9,*/ "SOFT" 0,
+			"WONK" 0;
+	}
+
+	50% {
+		font-variation-settings:
+			"wght" 900,
+			/*"opsz" 144,*/ "SOFT" 100,
+			"WONK" 1;
+	}
+
+	to {
+		font-variation-settings:
+			"wght" 100,
+			/*"opsz" 9,*/ "SOFT" 0,
+			"WONK" 0;
+	}
+}
+
+/* Untertitel des Artikels */
+h3.article-subtitle {
+	font-family: "Fraunces-Regular";
+	font-size: 6rem;
+	padding-left: 7rem;
+}
+h3.article-subtitle::before {
+	content: "———";
+	letter-spacing: -1em;
+	padding-right: 0.7em;
+	padding-left: 0.9em;
+}
+
+/* Namen der Autoren */
+div.article-author {
+	font-size: 5rem;
+	line-height: 1;
+	letter-spacing: 0.02em;
+	padding-top: 4rem;
+	padding-bottom: 1rem;
+}
+div.name-author {
+	font-size: 2rem;
+	letter-spacing: 0.02em;
+}
+
+/* Zwischenüberschriften */
+h3.chapter-headline {
+	font-family: "Fraunces-Regular";
+	font-style: normal;
+	color: black;
+	font-size: 3.5rem;
+	padding-bottom: 0.5rem;
+	margin-top: 2rem;
+}
+
+/* -----------------------------
+              TEXT
+------------------------------ */
+
+p {
+	margin: 0;
+	hyphens: none;
+	/* Nicht mehr als 2 aufeinanderfolgende Zeilen 
+	die mit einem Bindestrich enden  */
+	hyphenate-limit-lines: 2;
+	-ms-hyphenate-limit-lines: 2;
+	-webkit-hyphenate-limit-lines: 2;
+	/* Trenne nur Wörter mit mehr als 6 Zeichen,
+     Lasse min. 3 Zeichen vor dem Trennstrich und min. 2 danach */
+	hyphenate-limit-chars: 6 3 3;
+	-ms-hyphenate-limit-chars: 6 3 3;
+	-webkit-hyphenate-limit-chars: 6 3 3;
+}
+.article-content p {
+	font-size: 1.8rem;
+	/*letter-spacing: -0.04em;*/
+	line-height: 2.4rem;
+}
+/* Text wird eingerückt wenn zwei p-Elemente aufeinander folgen. */
+.article-content p + p {
+	text-indent: 3rem;
+}
+
+/* -----------------------------
+       TEXTAUSZEICHNUNG
+------------------------------ */
+/* Links */
+a {
+	text-decoration: underline;
+	text-decoration-style: solid;
+	text-decoration-color: #000;
+	text-decoration-thickness: 0.2rem;
+	text-underline-offset: 0.2rem;
+}
+
+a:hover {
+	color: #000;
+	text-decoration-color: blue;
+}
+
+/* Unterstrichener Text */
+.underline {
+	text-decoration: underline;
+	text-decoration-style: solid;
+	text-decoration-color: #000;
+	text-decoration-thickness: 0.2rem;
+	text-underline-offset: 0.2rem;
+	color: #000;
+}
+
+/* Kursiver Text */
+em {
+	font-style: italic;
+}
+
+/* Hervorgehobenes Zitat */
+blockquote {
+	background-color: #6c4f24;
+	color: white;
+	text-rendering: geometricPrecision;
+	padding: 1rem 1rem 1rem 2rem;
+	margin: 3rem auto;
+	border-radius: 1rem;
+	width: 35%;
+}
+
+/* Bildunterschriften */
+.article-content figure figcaption {
+	margin: 0.7rem 0;
+}
+.article-content figure figcaption p {
+	font-size: 1rem;
+	line-height: 1.3;
+	letter-spacing: 0.01em;
+}
+.article-content figure figcaption a {
+	text-decoration-thickness: 0.01rem;
+	color: #6c4f24;
+}
+
+/* Fußnotenzahlen im Fließtext */
+sup {
+	font-family: "Fraunces-Regular";
+	font-size: 0.6em;
+	vertical-align: baseline;
+	line-height: 0;
+	position: relative;
+	top: -0.7em;
+}
+/* Fußnoten Liste */
+ul.footnotes-list {
+	font-family: "Fraunces-Regular";
+	font-size: 1.3rem;
+	list-style: none;
+	margin-top: 1rem;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+}
+ul.footnotes-list li {
+	text-indent: 0rem;
+	margin-left: 0rem;
+	margin: 0;
+	padding: 0;
+	width: 50%;
+	align-self: flex-end;
+}
+
+/* -----------------------------
+             BILDER
+------------------------------ */
+
+figure {
+	margin-top: 0.6rem;
+	margin-right: 3rem;
+}
+
+.in-text-image {
+	width: 40%;
+	float: left;
+}
+
+.in-text-image.right {
+	float: right;
+	margin-top: 0.6rem;
+	margin-right: 0;
+	margin-left: 2rem;
+}
+
+.in-text-image img {
+	width: 100%;
+	height: auto;
+}

@@ -1,0 +1,85 @@
+/* -----------------------------
+      Mariano's Garden Styling
+------------------------------ */
+
+/* header styling */
+
+header {
+    background-color:rgb(20, 59, 33);
+    opacity: 0.7;
+    height: 80px;
+    font-size: 2.95rem;
+    text-align: center;
+}
+
+/* body styling */
+body {
+    background-image: url("../../images/grass.jpg");
+    margin: 20px 100px;
+    border: 1px solid black;
+}
+
+.forest {
+    border: 2px dashed;
+    border-color: rgb(15, 73, 49);
+    background-color: rgb(20, 59, 33);
+    height: 200px;
+    width: 100%;
+    display: flex;
+    opacity: 0.8;
+}
+
+.trees {
+    border: 2px dashed;
+    border-color: rgb(46, 53, 50);
+    background-color: rgb(69, 61, 54);
+    height: 100%;
+    width: 100%;
+    font-size: 60px;
+}
+
+.lake {
+    border: 20px solid;
+    border-color: rgb(159, 144, 125);
+    background-color: blue 0.5;
+    width: 100%;
+    height: 160px;
+    position: relative;
+    display: inline-block;
+}
+.lake img {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    display: block;
+}
+.mantra {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for exact center alignment */
+    color: whitesmoke; /* Color to ensure visibility */
+    font-size: 1.5rem; /* Adjust font size as desired */
+    text-align: center; /* Center text within the container */
+    padding: 10px; /* Adjust padding as needed */
+    width: 90%; /* Ensures the text doesn't overflow the GIF's boundaries */
+    box-sizing: border-box; /* Includes padding within the width */
+}
+
+.path {
+    background-color:rgb(200, 192, 180);
+    font-size: 1.5rem;
+    text-align: center;
+    color: brown;
+    border-color: brown;
+    border: 1px dashed;
+    opacity: 0.95;
+}
+.cemetery {
+    background-color: rgb(200, 192, 180);
+    font-size: 30px;
+    text-align: center;
+    opacity: 0.75;
+    border: 20px solid rgb(59, 59, 59);
+}

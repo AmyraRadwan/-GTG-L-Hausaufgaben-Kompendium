@@ -1,0 +1,144 @@
+/* ===============================
+RESET
+=============================== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-weight: normal;
+	font-size: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+img {
+	width: 100%;
+}
+
+/* ===================================== */
+
+.hg {
+	background-color: rgb(255, 124, 240);
+	height: 100vh;
+}
+
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 3rem;
+	line-height: 2.5rem;
+	color: white;
+	padding: 1rem;
+	padding-top: 30rem;
+}
+
+/* ===================================== */
+/* BLOB  */
+/* ===================================== */
+
+.überraster {
+	display: grid;
+	position: absolute;
+	grid-template-columns: 50vw 50vw;
+	grid-template-rows: 50vh 50vh;
+	max-height: 100svh;
+	overflow: hidden;
+}
+
+.raster > div {
+	position: relative;
+	margin: 10px;
+}
+
+.blobgruppe-1 {
+	display: grid;
+	position: absolute;
+	grid-template-columns: 100vw;
+	grid-template-rows: 0vh 0vh 0vh 0vh;
+	overflow: visible;
+	z-index: 2;
+}
+
+.blobgruppe-2 {
+	display: grid;
+	position: absolute;
+	grid-template-columns: 100vw;
+	grid-template-rows: 0vh 0vh 0vh 0vh;
+	overflow: visible;
+	z-index: 3;
+}
+
+.blobgruppe-3 {
+	display: grid;
+	position: absolute;
+	grid-template-columns: 50vw;
+	grid-template-rows: 0vh 0vh 0vh 0vh;
+	overflow: visible;
+	z-index: 6;
+	margin-left: 10rem;
+	margin-top: 5rem;
+}
+
+.blobgruppe-4 {
+	display: grid;
+	position: absolute;
+	grid-template-columns: 50vw;
+	grid-template-rows: 0vh 0vh 0vh 0vh;
+	overflow: visible;
+	z-index: 4;
+	margin-left: 65rem;
+	margin-top: 8rem;
+	font-family: "solvent", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16rem;
+	line-height: 13rem;
+	color: white;
+	mix-blend-mode: difference;
+}
+
+.blobgruppe-5 {
+	display: grid;
+	position: absolute;
+	grid-template-columns: 50vw;
+	grid-template-rows: 0vh 0vh 0vh 0vh;
+	overflow: visible;
+	z-index: 3;
+	margin-left: 20rem;
+	margin-top: 1rem;
+}
+
+.blobgruppe-7 {
+	display: grid;
+	position: absolute;
+	grid-template-columns: 50vw;
+	grid-template-rows: 0vh 0vh 0vh 0vh;
+	overflow: visible;
+	z-index: 3;
+	margin-left: -70rem;
+	margin-top: -20rem;
+}
+
+.blobgruppe-6 {
+	display: grid;
+	position: absolute;
+	grid-template-columns: 40vw;
+	grid-template-rows: 0vh 0vh 0vh 0vh;
+	overflow: visible;
+	margin-top: 20rem;
+	margin-left: 30vh;
+	z-index: 5;
+}
+
+.g {
+	isolation: isolate;
+}

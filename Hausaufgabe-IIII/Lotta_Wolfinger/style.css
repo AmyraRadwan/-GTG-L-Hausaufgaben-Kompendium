@@ -1,0 +1,40 @@
+/* -----------------------------
+         SVG-MORPHING
+------------------------------ */
+body {
+
+	opacity: 0.8;
+	background-image:  linear-gradient(#444cf7 2px, transparent 2px), linear-gradient(90deg, #444cf7 2px, transparent 2px), linear-gradient(#444cf7 1px, transparent 1px), linear-gradient(90deg, #444cf7 1px, #e5e5f7 1px);
+	background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+	background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+		/* Mit radial-gradient, linear-gradient und conic-gradient lassen sich Verläufe erstellen und auf Elemente anwenden */
+		/* background: linear-gradient(#e66465, #9198e5); */
+		/* background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(11, 236, 165, 1) 35%, rgba(0, 212, 255, 1) 100%); */
+		/* background: conic-gradient(from 90deg, red, yellow, green); */
+		/* background: repeating-conic-gradient(red 0%, yellow 15%, red 33%); */
+		/* background: repeating-radial-gradient(#e66465, #9198e5 20%);*/
+		/* background: repeating-linear-gradient(transparent, #4d9f0c 40px), repeating-linear-gradient(0.25turn, transparent, #3f87a6 20px); */
+	
+	}
+	
+
+section {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	height: 50vh;
+	margin-top: 10rem;
+}
+
+svg {
+	height: auto;
+	width: 100%;
+}
+
+image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: auto;
+}

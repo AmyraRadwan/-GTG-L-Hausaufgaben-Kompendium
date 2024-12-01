@@ -1,0 +1,13 @@
+/* -----------------------------
+         ZWISCHENTITEL
+------------------------------ */
+.svgbox {
+	position: fixed;
+	height: 145%;
+	width: 145%;
+}
+
+body {
+	background: linear-gradient(to top, #fe7b7bff 0%, #8596f4ff 100%);
+	height: 200vh; /* Der body braucht eine Höhe die größer ist als die Bildschirmhöhe */
+}

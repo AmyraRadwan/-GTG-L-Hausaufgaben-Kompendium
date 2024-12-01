@@ -1,0 +1,72 @@
+/* Grundlegendes Styling für den gesamten Container */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f3e3c6;
+  margin: 0;
+}
+
+.container {
+  margin: 20px 50px;
+  background-color: #e1d0ab;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  gap: 10px;
+}
+
+/* Reihen definieren */
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Besondere Styles für verschiedene Sektionen */
+.section-1 {
+  background-color: #1c1d35;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 5rem;
+}
+
+.section-2 {
+  background-color: #1c1d35;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 2rem;
+}
+
+.section-3 {
+  background-color: #1c1d35;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 2rem;
+}
+
+.section-4 {
+  background-color: #1c1d35;
+  padding: 120px;
+  border-radius: 5px;
+  font-size: 3rem;
+  color: #fbef7a;
+}
+
+.section-5 {
+  background-color: #1c1d35;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 5rem;
+}
+
+.section-6 {
+  background-color: #1c1d35;
+  padding: 10px;
+  border-radius: 5px;
+  display: grid;
+  gap: 5px;
+}

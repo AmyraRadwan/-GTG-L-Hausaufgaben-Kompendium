@@ -1,0 +1,85 @@
+div {
+  height: 650px;
+  width: 460px;
+  background-color: rgb(0, 21, 255);
+  padding: 30px;
+  border: dotted 5px;
+  color: yellow;
+}
+
+span.Titel {
+  font-size: 18px;
+  font-style: italic;
+}
+
+.Upper {
+  background-color: pink;
+  height: 100px;
+  width: 400px;
+  padding: 30px 30px 20px;
+}
+
+.Ocean {
+  background-color: rgb(14, 0, 118);
+  height: 40px;
+  width: 380px;
+  margin: 20px;
+  padding: 5px 10px 40px 20px;
+}
+
+.Disco {
+  font-size: 40px;
+  margin: 20px 165px -20px;
+}
+
+.are {
+  font-size: 18px;
+  font-style: italic;
+  margin: 20px 270px -20px;
+}
+
+.Pond {
+  background-color: rgb(21, 21, 106);
+  height: 40px;
+  width: 40px;
+  margin: -3px 110px -70px 185px;
+  padding: 20px 10px 20px 30px;
+  font-size: 30px;
+}
+
+.products {
+  font-size: 18px;
+  font-style: italic;
+  margin: 44px 139px -20px;
+}
+
+span.ducks {
+  font-size: 18px;
+  font-style: normal;
+}
+
+.Bottom {
+  background-color: pink;
+  height: 100px;
+  width: 400px;
+  margin: 50px 5px 20px;
+  padding: 20px;
+}
+
+span.Ele {
+  font-size: 32px;
+}
+
+span.Straw {
+  font-size: 30px;
+}
+
+span.Blue {
+  font-size: 30px;
+}
+
+.Ending {
+  font-size: 18px;
+  font-style: italic;
+  padding: 2px 5px 4px 315px;
+}

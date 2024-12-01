@@ -1,0 +1,58 @@
+/* -----------------------------
+         SVG-MORPHING
+------------------------------ */
+/* Reset margins and paddings for a clean slate */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+
+body {
+	background-color: #9d988e86;
+	min-height: auto;
+}
+
+section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	height: 100vh;
+	gap: 20px;
+	padding: 20px;
+	margin-top: 5rem;
+}
+
+section svg {
+	flex: 0 1 auto;
+	width: 400px;
+	height: auto;
+	display: block;
+	margin: auto;
+}
+
+image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: auto;
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+	
+}
+
+img {
+	animation: rotate 5s linear infinite;
+	max-width: 25%;
+	height: auto;
+}

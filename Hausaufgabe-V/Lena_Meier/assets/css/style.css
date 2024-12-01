@@ -1,0 +1,332 @@
+/* -----------------------------
+        FONT-FILE IMPORTS
+------------------------------ */
+
+/* Von Google in CSS einbinden */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+/* True-Type Format einbinden */
+@font-face {
+	font-family: "Bandeins Strange";
+	src: url("../fonts/BandeinsStrangeVariableGX.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Woff2- & Woff-Format einbinden */
+@font-face {
+	font-family: "Review Mono";
+	src:
+		url("../fonts/ReviewMonoRegular.woff2") format("woff2"),
+		url("../fonts/ReviewMonoRegular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+/* Der kursive Schnitt wird als »font-style:italic« eingebunden */
+@font-face {
+	font-family: "Review Mono";
+	src:
+		url("../fonts/ReviewMonoCursive.woff2") format("woff2"),
+		url("../fonts/ReviewMonoCursive.woff") format("woff");
+	font-weight: normal;
+	font-style: italic;
+}
+
+/* -----------------------------
+        GLOBALE STYLES 
+------------------------------ */
+
+html {
+	font-size: 1vw; /* Festlegen der globalen Schriftgröße, für responsives Design */
+}
+
+body {
+	font-family: "Bandeins Strange", all; /* Festlegen der globalen Schrift */
+	background-color: #ffffff; /* Festlegen der Hintergrundfarbe */
+}
+
+article {
+	padding: 2rem;
+	margin: 2rem;
+}
+
+/* -----------------------------
+        TYPENSCHILDER
+------------------------------ */
+
+.article-type,
+.footnotes-label {
+	font-size: 1.3rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	font-weight: 700;
+	line-height: 0.9;
+	border-radius: 0.5rem;
+	background-color: rgb(13, 0, 255);
+	color: #ffffff;
+	display: inline-block;
+	padding: 0.7rem 0.7rem 0.5rem 0.7rem;
+	margin-bottom: 2rem;
+}
+
+.footnotes-label {
+	margin-bottom: 0rem !important;
+	margin-top: 2rem !important;
+}
+
+/* -----------------------------
+         ÜBERSCHRIFTEN
+------------------------------ */
+/* Titel des Artikels */
+.article-title span,
+.article-subtitle span {
+	font-family: "Bandeins Strange", all;
+	font-size: 7rem;
+	line-height: 1;
+	font-weight: 800;
+	letter-spacing: -0.02rem;
+	margin: 0;
+	padding-left: 0.8rem;
+	animation: width 2s infinite;
+	animation-delay: calc(var(--char-index) * 150ms);
+}
+
+@keyframes width {
+	from {
+		font-weight: 100;
+	}
+
+	50% {
+		font-weight: 800;
+	}
+
+	to {
+		font-weight: 100;
+	}
+}
+
+/* AN AMYRA: ICH WÜRDE GERNE DIE SCHRIFT ANIMIEREN; ABER ES KLAPTT NICHT, 
+DIE UNTEN AUFGEFÜHRTEN SCHNITTE SOLLTEN ES SEIN @keyframes my-animation {
+  0% {
+    font-variation-settings: "Regular" 00, "Bold Extented Full" 00;
+  }
+  100% {
+    font-variation-settings: "Regular" 800, "Bold Extented Full" 800;
+  }
+} */
+
+/* Untertitel des Artikels */
+h3.article-subtitle {
+	font-family: "Bandeins Strange", sans-serif;
+	font-size: 6rem;
+	padding-left: 7rem;
+}
+h3.article-subtitle::before {
+	content: "———";
+	letter-spacing: -1em;
+	padding-right: 0.7em;
+	padding-left: 0.9em;
+}
+
+/* Namen der Autoren */
+div.article-author {
+	font-size: 1.3rem;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	padding-top: 1rem;
+	padding-bottom: 4rem;
+	padding-left: 2rem;
+
+	color: rgb(13, 0, 255);
+}
+
+/* Zwischenüberschriften */
+h3.chapter-headline {
+	font-family: "Bandeins Strange" sans-serif;
+	font-style: normal;
+	color: rgb(13, 0, 255);
+	font-size: 2.5rem;
+	padding-bottom: 1rem;
+	letter-spacing: 0.01em;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	margin-top: calc(2.5rem * 2);
+}
+
+/* -----------------------------
+              TEXT
+------------------------------ */
+
+p {
+	margin: 0;
+	hyphens: auto;
+	/* Nicht mehr als 2 aufeinanderfolgende Zeilen 
+	die mit einem Bindestrich enden  */
+	hyphenate-limit-lines: 2;
+	-ms-hyphenate-limit-lines: 2;
+	-webkit-hyphenate-limit-lines: 2;
+	/* Trenne nur Wörter mit mehr als 6 Zeichen,
+     Lasse min. 3 Zeichen vor dem Trennstrich und min. 2 danach */
+	hyphenate-limit-chars: 6 3 3;
+	-ms-hyphenate-limit-chars: 6 3 3;
+	-webkit-hyphenate-limit-chars: 6 3 3;
+}
+.article-content p {
+	font-size: 1.3rem;
+	letter-spacing: -0.04em;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+/* Text wird eingerückt wenn zwei p-Elemente aufeinander folgen. */
+.article-content p + p {
+	text-indent: 6rem;
+}
+
+/* -----------------------------
+       TEXTAUSZEICHNUNG
+------------------------------ */
+/* Links */
+a {
+	font-family: "Bandeins Strange", sans-serif;
+	vertical-align: baseline;
+	line-height: 0;
+	position: relative;
+	color: rgb(13, 0, 255);
+	font-size: 1.8rem;
+	letter-spacing: -0.04em;
+}
+
+a:hover {
+	color: rgb(13, 0, 255);
+	text-decoration-color: rgb(13, 0, 255);
+}
+
+/* Unterstrichener Text */
+.underline {
+	text-decoration: underline;
+	text-decoration-style: solid;
+	text-decoration-color: rgb(13, 0, 255);
+	text-decoration-thickness: 0.2rem;
+	text-underline-offset: 0.2rem;
+	color: rgb(13, 0, 255);
+}
+
+.anmerkung {
+	font-size: 1.3rem;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+	padding-top: 1rem;
+
+	padding-bottom: 4rem;
+	color: rgb(13, 0, 255);
+}
+
+/* Kursiver Text */
+em {
+	font-style: italic;
+}
+
+/* Hervorgehobenes Zitat */
+blockquote {
+	background-color: rgb(13, 0, 255);
+	color: white;
+	text-rendering: geometricPrecision;
+	padding: 1rem 1rem 1rem 2rem;
+	margin: 3rem auto;
+	border-radius: 1rem;
+	width: 35%;
+}
+
+/* Bildunterschriften */
+.article-content figure figcaption {
+	margin: 0.7rem 0;
+}
+.article-content figure figcaption p {
+	font-size: 1rem;
+	line-height: 1.3;
+	letter-spacing: 0.01em;
+}
+.article-content figure figcaption a {
+	text-decoration-thickness: 0.01rem;
+	color: #6c4f24;
+}
+
+/* Fußnotenzahlen im Fließtext */
+sup {
+	font-family: "Bandeins Strange", sans-serif;
+	vertical-align: baseline;
+	line-height: 0;
+	position: relative;
+	color: rgb(13, 0, 255);
+	font-size: 1.8rem;
+	letter-spacing: -0.04em;
+}
+
+/* Fußnoten Liste */
+ul.footnotes-list {
+	font-family: "Bandeins Strange", sans-serif;
+	font-size: 1.8rem;
+	letter-spacing: -0.04em;
+	list-style: none;
+	margin-top: 1rem;
+	padding: 0;
+	width: 70ch;
+	color: rgb(13, 0, 255);
+}
+ul.footnotes-list li {
+	text-indent: -0.9rem;
+	margin-left: 2.5rem;
+	margin: 0;
+	padding: 0;
+}
+
+/* -----------------------------
+             BILDER
+------------------------------ */
+
+figure {
+	margin-top: 0.6rem;
+	margin-right: 3rem;
+}
+
+.in-text-image {
+	float: center;
+
+	display: block;
+	margin-top: 6rem;
+	margin-bottom: 6rem;
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%;
+	position: relative;
+	box-shadow: 0rem 0rem 1rem rgb(13, 0, 255);
+	animation: spin 8s infinite ease-in-out;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(359deg);
+	}
+}
+
+.rotate {
+	animation: rotate 3s infinite linear;
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(359deg);
+	}
+}
+
+.in-text-image img {
+	width: 100%;
+	height: auto;
+}

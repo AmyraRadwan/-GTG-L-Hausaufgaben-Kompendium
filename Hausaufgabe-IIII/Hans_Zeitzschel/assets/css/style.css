@@ -1,0 +1,93 @@
+/* -----------------------------
+         SVG-MORPHING
+------------------------------ */
+body {
+	background: linear-gradient(to top, #0d0038ff 0%, #19006bff 32%, #001fbdff 38%, 
+	#2eabffff 77%, #52baffff 87%, #2eabffff 100%);
+}
+
+svg {
+	height: auto;
+	width: 100%;
+}
+
+section {
+	 /*position: relative;
+	display: flex;
+	flex-direction: row;
+	height: 50vh;
+	margin-top: 10rem;*/
+	position: relative;
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  overflow: hidden; /* Hide any overflowing elements */
+}
+
+.fischsideright {
+	position: absolute;
+	animation: moveCustom 15s ease-in-out infinite; /* Adjust total duration */
+	transform-origin: center; /* Keep the scaling centered */
+  }
+  
+@keyframes moveCustom {
+  0% {
+    transform: translateX(-100%) scale(0.5); /* Start off-screen left */
+    top: 50%;
+  }
+  35% {
+    transform: translateX(100%) scale(0.35); /* Move fully right */
+    top: 50%;
+  }
+  37% {
+    transform: translateX(100%) scale(0.35); /* Pause briefly, slightly out of frame */
+    top: 50%;
+  }
+  40% {
+    transform: translateX(100%) scale(0.15) scaleX(-1); /* Start mirrored movement */
+    top: 30%;
+  }
+  100% {
+    transform: translateX(-100%) scale(0.2) scaleX(-1); /* End off-screen left */
+    top: 30%;
+  }
+}
+  
+  
+  
+  
+
+/*
+.container {
+	position: relative;
+	overflow: hidden;
+	width: 100vw; 
+	height: 100vh; 
+  }
+  
+  
+  .fischsideright {
+	position: absolute;
+	top: 50%; 
+	left: -100px; 
+	transform: translateY(-50%); 
+	animation: slideRight 5s linear infinite; 
+  }
+  
+
+  @keyframes slideRight {
+	0% {
+	  left: -100px; 
+	}
+	100% {
+	  left: 100vw; 
+	}
+  }
+
+/*
+image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: auto;
+} */

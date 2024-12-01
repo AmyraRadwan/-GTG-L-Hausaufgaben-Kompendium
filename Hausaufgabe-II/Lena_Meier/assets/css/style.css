@@ -1,0 +1,105 @@
+/* -----------------------------
+         ZWISCHENTITEL
+------------------------------ */
+
+
+.raster1{
+position: absolute;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+gap: 2.3rem;
+height: 100vh;
+width: 100vw;
+opacity: 0.6;
+}
+.raster1 > div {
+   
+}
+
+.raster2 > div {
+
+}
+
+.raster2 {
+position: absolute;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(3, 1fr);
+gap: 2.3rem;
+height: 100%;
+width: 100%;
+
+}
+
+.raster3 > div {
+  
+}
+
+.raster3 {
+position: absolute;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(4, 1fr);
+gap: 2.3rem;
+height: 100%;
+width: 100%;
+
+}
+
+.raster4 > div {
+   
+}
+
+.raster4 {
+position: absolute;
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+gap: 2.3rem;
+height: 100%;
+width: 100%;
+
+}
+.raster5 > div {
+   
+}
+
+.raster5 {
+position: absolute;
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+grid-template-rows: repeat(6, 1fr);
+gap: 2.3rem;
+height: 100%;
+width: 100%;
+
+}
+
+.raster > div {
+    position: relative;
+}
+.raster > div > svg{
+   
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+
+}
+/*----------------------------------
+Typo
+__________________________________*/
+
+.raster > div > p{
+    position: absolute;
+    width: 100%;
+   height: 100%;
+    z-index: 1;
+    justify-self: center;
+    align-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    mix-blend-mode: difference;
+}

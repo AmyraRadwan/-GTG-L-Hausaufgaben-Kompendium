@@ -1,0 +1,95 @@
+/* -----------------------------
+         SVG-MORPHING
+------------------------------ */
+body {
+	margin: 0; /* Entfernt standardmäßige Abstände */
+    padding: 0;
+	background-color: #3b3b3b;
+	 background-image: url(../img/textur.gif);
+	min-height: auto;
+	background-size: cover; /* Bild deckt die gesamte Fläche ab */
+    background-repeat: no-repeat; /* Wiederholt das Bild nicht */
+    background-position: center; /* Zentriert das Bild */
+    height: 0vh; /* Höhe des Viewports (volle Höhe des Browsers) */
+    width: 50vw;
+	
+}
+
+
+.text {
+	position: absolute;
+	top: 40rem;
+	white-space: nowrap; /* Verhindert Zeilenumbruch */
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 10rem;
+	font-weight: bold;
+	color: white;
+	animation: scroll-left 20s linear infinite; /* Animiert den Text */
+}
+
+@keyframes scroll-left {
+	0% {
+		transform: translateX(100%); /* Start außerhalb des Bildschirms rechts */
+	}
+	100% {
+		transform: translateX(-100%); /* Ende außerhalb des Bildschirms links */
+	}
+}
+
+section {
+	
+	 position: relative;
+    display: flex;
+    justify-content: center; /* Zentriert das SVG */
+    align-items: center; /* Vertikale Zentrierung */
+    height: 200vh; /* Volle Höhe */
+    width: 200vw; /* Volle Breite */
+    overflow: hidden; 
+	mix-blend-mode: difference;
+
+}
+
+svg {
+	
+    overflow: visible;
+
+}
+
+
+
+path {
+	fill: #000000; /* Startfarbe */
+	animation: colorChange 10s infinite alternate;
+	animation-direction: alternate-reverse; 
+}
+
+@keyframes colorChange {
+
+
+0% {
+	fill: #ff0000;
+	transform: translate(700px, 50px); /* Rechts */
+}
+50% {
+	fill: #de5bff;
+	transform: translate(700px, 700px); /* Rechts unten */
+}
+
+100% {
+	fill: #ffa200;
+	transform: translate(50px, 50px); /* Zurück zur Anfangsposition */
+}
+}
+
+
+
+
+image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: auto;
+	
+}
+

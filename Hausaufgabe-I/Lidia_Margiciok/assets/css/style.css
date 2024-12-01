@@ -1,0 +1,137 @@
+/* -----------------------------
+           BOX MODEL
+------------------------------ */
+
+html {
+	margin: 2rem;
+}
+
+header {
+	margin: 1rem 0 2rem;
+	font-size: 10rem;
+}
+
+footer {
+	margin: 2rem 0 1rem 0;
+	font-size: 8rem;
+}
+nav {
+	margin: 1rem 0 2rem;
+	font-size: 6rem;
+}
+
+p,
+ul,
+div {
+	margin-top: 4rem;
+}
+
+li {
+	margin-top: 1rem;
+	list-style: none; /* Aufzählungszeichen, Standard: disc */
+}
+
+body {
+	padding: 4rem 2rem;
+}
+
+section {
+	padding: 2rem;
+}
+
+p,
+ul,
+li,
+h1,
+div,
+header,
+nav,
+footer {
+	padding: 1rem;
+}
+
+.red,
+a {
+	padding: 0.5rem;
+}
+
+header,
+nav,
+footer {
+	height: 6rem;
+}
+
+/* -----------------------------
+            COLORS
+------------------------------ */
+
+html {
+	background-color: rgb(23, 99, 175);
+}
+
+body {
+	background-color: rgb(114, 172, 233);
+}
+
+section {
+	background-color: rgb(42, 76, 167);
+}
+
+header {
+	background-color: rgb(59, 62, 255);
+	;
+}
+
+nav {
+	background-color: rgb(13, 18, 117)
+}
+
+footer {
+	background-color: rgb(2, 3, 80);
+}
+
+h1,
+li,
+p,
+div {
+	background-color: rgb(37, 27, 130);
+	font-size: 2rem;
+}
+ul {
+	background-color: rgb(138, 160, 241);
+	
+}
+
+/* -----------------------------
+        PSEUDO-KLASSEN
+------------------------------ */
+/* :hover wird aktiviert, wenn man mit der Maus über den Link fährt, :active, wenn der Link gedrückt wird. */
+a:hover,
+a:active {
+	color: rgb(22, 2, 80);
+}
+
+/* -----------------------------
+          TYPOGRAPHY
+------------------------------ */
+/* Das body Element spricht alle Inline-Level-Elemente im body an. */
+body {
+	font-family: 'Courier New', Courier, monospace, Helvetica, sans-serif; /* Schriftfamilie */
+	font-size: 10rem; /* Schriftgröße */
+	line-height: 5rem; /* Zeilenabstand */
+}
+
+h1,
+li,
+p,
+div{
+        font-size: 5rem;
+}
+
+/* -----------------------------
+         BORDER RADIUS
+------------------------------ */
+/* Das Sternchen spricht alle Elemente im body an. */
+* {
+	border-radius: 0px; /* Rahmenradius 5px für alle Elemente im body. */
+}

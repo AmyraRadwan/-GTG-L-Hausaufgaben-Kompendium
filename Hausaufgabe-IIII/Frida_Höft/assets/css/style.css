@@ -1,0 +1,80 @@
+/* -----------------------------
+         SVG-MORPHING
+------------------------------ */
+body {
+  background-color: #a8debe;
+  min-height: auto;
+  background: repeating-linear-gradient(transparent, #ffffff 40px),
+    repeating-linear-gradient(0.25turn, transparent, #000000 40px);
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 50vh;
+  margin-top: 10rem;
+}
+
+@keyframes rotation {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.Schachfigur {
+  fill: #bf00ff78;
+  transform-box: fill-box; /* Center SVG */
+  transform-origin: center; /* Center SVG */
+  animation: rotation 5s ease-in-out infinite; /* Animation einstellen */
+}
+
+.Schachfigur2 {
+  fill: #000;
+  transform-box: fill-box; /* Center SVG */
+  transform-origin: center; /* Center SVG */
+  animation: rotation 6s ease-in-out infinite; /* Animation einstellen */
+}
+
+.Text {
+  font-size: 8rem;
+  line-height: 10rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  stroke-width: 2rem;
+  text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #bf00ff78,
+    0 0 40px #bf00ff78, 0 0 50px #bf00ff78, 0 0 60px #bf00ff78,
+    0 0 70px #bf00ff78;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+  margin: 0rem 5rem 0rem 5rem;*/
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #bf00ff78,
+      0 0 40px #bf00ff78, 0 0 50px #bf00ff78, 0 0 60px #bf00ff78,
+      0 0 70px #bf00ff78;
+  }
+  to {
+    text-shadow: 0 0 20px #000, 0 0 30px #000, 0 0 40px #000,
+      0 0 50px #000, 0 0 60px #000, 0 0 70px #000, 0 0 80px #000;
+  }
+}
+
+
+svg {
+  height: auto;
+  width: 100%;
+  /* animation: rotation 5s linear infinite; */
+}
+
+image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: auto;
+}

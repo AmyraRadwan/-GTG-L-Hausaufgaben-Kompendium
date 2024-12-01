@@ -1,0 +1,252 @@
+/* -------------------------------------
+		   CSS-GRID & FLEX
+-------------------------------------- */
+
+.grid {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000;
+	
+	font-size: 3rem;
+	display: grid;
+	grid-template-columns:  repeat(4, 25%);
+	grid-template-rows:  repeat(20, 4vh);
+	
+	
+}
+
+.row {
+	display: grid;
+	grid-template-columns: 10px repeat(4, 100px);
+	grid-template-rows:   10px repeat(4,100px);
+	overflow: visible;
+	
+	z-index: 3;
+	
+	/* border: dotted magenta 2px; */
+}
+
+
+.hg {
+	background-color: rgb(0, 47, 255);
+}
+
+p{
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgb(106, 255, 0);
+	font-size: 3rem;
+	margin-left: 1rem;
+	
+}
+a{
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgb(255, 255, 255);
+	font-size: 1rem;
+	margin-left: 1rem;
+	
+}
+a:hover {
+	color: magenta;
+}
+
+h1 {
+
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgb(106, 255, 0);
+	font-size: 1rem;
+	margin-left: 1rem;
+	padding-top: 1rem;
+
+}
+
+
+
+
+/* -------------------------------------
+		TEMPERATUR     
+-------------------------------------- */
+
+.kühl{
+	margin: 20px;
+	width: 15vw;
+	height: 17vh;
+	background-color: rgb(142, 142, 255);
+	border-radius: 50px;
+	mix-blend-mode: multiply;
+	color: rgb(150, 150, 255);
+	z-index: 3;
+	position: static;
+	
+
+}
+
+.mittel {
+	width: 32vw;
+	height: 28vh;
+	background-color: rgba(1, 201, 148, 0.751);
+	mix-blend-mode: multiply;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	color: rgb(1, 201, 148);
+	margin-bottom: 30px;
+	position: static;
+	
+
+}
+.warm {
+	width: 35vw;
+	height: 25vh;
+	background-color: rgba(237, 210, 9, 0.752);
+	border-radius: 30px;
+	mix-blend-mode: multiply;
+	position: static;
+	
+
+}
+.mittelwarm {
+	width: 45vw;
+	height: 55vh;
+	background-color: rgba(255, 121, 4, 0.765);
+	mix-blend-mode: multiply;
+	z-index: 2;
+	position: static;
+	
+
+}
+.heiß {
+	width: 55vw;
+	height: 60vh;
+	background-color: rgb(201, 1, 154);
+	mix-blend-mode: multiply;
+	
+	border-radius: 50px;
+	z-index: 2;
+
+}
+.extrem {
+	width: 200px;
+	height: 200px;
+	background-color: rgb(255, 55, 81);
+	mix-blend-mode: multiply;
+	
+}
+
+
+
+/* -------------------------------------
+		WIND    
+-------------------------------------- */
+
+.wind{
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgb(106, 255, 0);
+	mix-blend-mode: difference;
+	font-size: 5rem;
+	z-index: 1;
+	margin-top: -1rem;
+	margin-bottom: -1rem;
+}
+
+
+
+.cell {
+	z-index: 3;
+	height:5rem;
+	width: 5rem;
+	font-size: 7rem;
+	mix-blend-mode: difference;
+}
+
+.Wettertabelle{
+	height: 91vh;
+	overflow: hidden;
+	background-color: blue;
+	
+}
+
+
+
+
+
+
+/* -------------------------------------
+		Move   
+-------------------------------------- */
+
+#up {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	font-size:5rem;
+	mix-blend-mode: multiply;
+	
+}
+#down {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	font-size:5rem;
+	
+}
+
+#left {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	font-size:5rem;
+	
+	
+}
+#right {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	font-size:5rem;
+	
+	
+}
+
+.move {
+	display: grid;
+	
+	grid-template-columns:  1fr 1fr;
+	grid-template-rows:  repeat(3, 25vh);
+	position: absolute; 
+	z-index: 3;
+	height: 91h;
+
+}
+.pfeil1 {
+	
+	margin-left: 10px;
+	
+}
+
+
+/* -------------------------------------
+		shapes  
+-------------------------------------- */
+
+.shapes1 {
+    display: grid; 
+    grid-template-columns: 100vw ;
+    grid-template-rows: 100vh ;
+    height: 91vh;
+    width: 100svw;
+    position: absolute;
+   
+
+    
+   
+}
+
+.raster > div {
+    position: relative;
+   
+}
+
+.raster > div > svg {
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+
+}

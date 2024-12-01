@@ -1,0 +1,108 @@
+/* -----------------------------
+         BOARD
+------------------------------ */
+
+.raster1 {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2.3rem;
+    height: 100vh;
+    width: 100vw;
+ 
+}
+
+.raster1 > div {
+    border: 1px solid red;
+}
+
+
+
+.raster2 {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2.3rem;
+    height: 100svh;
+    width: 100svw;
+}
+
+.raster2 > div {
+    border: 1px solid blue;
+}
+
+
+
+.raster3 {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2.3rem;
+    height: 100vh;
+    width: 100vw;
+ 
+}
+
+.raster3 > div {
+    border: 1px solid rgb(0, 255, 30);
+}
+
+.raster4 {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 2.3rem;
+    height: 100vh;
+    width: 100vw;
+ 
+}
+
+.raster4 > div {
+    border: 1px solid rgb(255, 238, 0);
+}
+
+
+.raster5 {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 2.3rem;
+    height: 100vh;
+    width: 100vw;
+ 
+}
+
+.raster5 > div {
+    border: 1px solid rgb(179, 0, 255);
+}
+.raster > div {
+position: relative;
+}
+
+.raster > div > svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* -----------------------------
+        TYPO
+------------------------------ */
+.raster > div > p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    justify-self: center;
+    align-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #fff;
+    mix-blend-mode: difference;
+}

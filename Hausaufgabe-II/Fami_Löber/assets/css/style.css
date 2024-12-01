@@ -1,0 +1,140 @@
+/* -----------------------------
+         RASTER 1
+------------------------------ */
+.raster1 {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2.3rem;
+  height: 100svh;
+  width: 100svw;
+}
+
+.raster1 > div {
+  border: 6px dotted rgb(255, 0, 76);
+}
+
+.raster{
+  background-color: rgba(0, 0, 255, 0.406);
+  mix-blend-mode:lighten;
+}
+
+.raster > div {
+  position: relative;
+}
+
+.raster > div > svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/*--------------------
+TYPO -> über dieses Zeichen > wird der Pfad zum exakten p Element beschrieben
+----------------------*/
+.raster > div > p {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  justify-self: center;
+  align-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: rgb(34, 0, 255);
+  mix-blend-mode:multiply;
+}
+
+/*-------------------------
+         RASTER 2       
+---------------------------*/
+
+.raster2 {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  grid-template-rows: repeat(3, 3fr);
+  gap: 2.3rem;
+  height: 100svh;
+  width: 100svw;
+}
+
+.raster2 > div {
+  border: solid 3px rgb(255, 171, 171);
+}
+
+/*-------------------------
+         RASTER 3       
+---------------------------*/
+.raster3 {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 2.3rem;
+  height: 100svh;
+  width: 100svw;
+}
+
+.raster3 > div {
+  border: solid 1px rgb(248, 0, 0);
+}
+
+/*-------------------------
+         RASTER 4     
+---------------------------*/
+.raster4 {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(5, 5fr);
+  grid-template-rows: repeat(5, 5fr);
+  gap: 2.3rem;
+  height: 100svh;
+  width: 100svw;
+}
+
+.raster4 > div {
+  border: solid 1px orange;
+}
+
+/*-------------------------
+         RASTER 5    
+---------------------------*/
+.raster5 {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(6, 6fr);
+  grid-template-rows: repeat(6, 6fr);
+  gap: 2.3rem;
+  height: 100svh;
+  width: 100svw;
+}
+
+.raster5 > div {
+  border: dotted 2px rgb(255, 6, 6);
+}
+
+/*----Typo Kram Verfeinern-----*/
+#Coden {
+  line-height: 13px;
+}
+
+#WorkLife {
+  line-height: 13px;
+}
+
+#unbunt{
+  line-height: 13px;
+}
+
+#häkeln{
+  line-height: 13px;
+}
+
+#Ausgeglichen{
+  color: rgb(248, 249, 255);
+  mix-blend-mode:hard-light;
+  font-style: italic;
+}

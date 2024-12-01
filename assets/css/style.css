@@ -1,0 +1,60 @@
+/* -----------------------------
+          MAIN STYLES
+----------------------------- */
+
+body {
+	background-color: #9c9cff;
+	font-family: New Edge;
+}
+
+section {
+	margin: 2rem;
+	float: right;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+h1 {
+	font-size: 2rem;
+	padding: 1rem 0 1rem 1rem;
+}
+
+h2 {
+	padding-bottom: 0.5rem;
+}
+
+.fail a {
+	color: #ff0000 !important;
+	cursor: progress;
+}
+
+.fail a:hover,
+.fail a:active {
+	text-decoration: none !important;
+}
+
+.link a {
+	text-decoration: none;
+	color: #424242;
+	font-size: 1.2rem;
+}
+
+.link a:hover,
+.link a:active {
+	color: #eaff00;
+	text-decoration: underline;
+	text-underline-offset: 0.1rem;
+	text-decoration-thickness: 0.1rem;
+}
+
+/* -----------------------------
+            FONTS
+----------------------------- */
+
+@font-face {
+	font-family: New Edge;
+	src: url(/assets/fonts/NewEdgeTM-Medium.woff2);
+}

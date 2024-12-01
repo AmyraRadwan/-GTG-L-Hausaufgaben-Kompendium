@@ -1,0 +1,77 @@
+/* -------------------------------------
+		   CSS-GRID & FLEX
+-------------------------------------- */
+body {background-color: #F24405;}
+.wrapper {
+	font-family: "Roboto", sans-serif;
+  font-weight: 5100;
+  font-style: normal;
+	color: #000000;
+	font-size: 2.5rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+	text-transform: uppercase; /* Alle Texte in Großbuchstaben */
+}
+
+/* .row {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	text-transform: uppercase;
+} */
+
+/* -------------------------------------
+		     CSS-ANIMATION
+-------------------------------------- */
+
+.c3 {
+	padding: 0.2rem;
+	animation: appearDissapear 2s infinite;
+	text-transform: uppercase; /* Falls spezifischer Text innerhalb der Zellen */
+}
+.c1 {
+	padding: 0.2rem;
+	animation: appearDissapear 2s infinite;
+	text-transform: uppercase; /* Falls spezifischer Text innerhalb der Zellen */
+}
+
+@keyframes appearDissapear {
+	0%,
+	49.9% {
+	  opacity: 1;
+	}
+	50%,
+	100% {
+	  opacity: 0;
+	}
+  }
+  
+  /* Auf Element anwenden */
+/*   .fade-in-element {
+	animation: fadeIn 2s ease-in-out forwards;
+  } */
+/* -------------------------------------
+		     IMAGE-SIZING
+-------------------------------------- */
+
+.cell img {
+	max-width: 3rem;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 35%);
+	text-transform: uppercase; /* Falls spezifischer Text in .wrapper */
+}
+/* -------------------------------------
+         STYLING 3RD COLUMN White
+-------------------------------------- */
+.c3 {
+	background-color: rgb(255, 255, 255);
+	font-size: 2.5rem;
+}
+.c1:hover, .c2:hover, .c3:hover {
+color: blue;
+}

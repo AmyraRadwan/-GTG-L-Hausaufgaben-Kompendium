@@ -1,0 +1,69 @@
+/* Hier kann ein hilfreiches Kommentar stehen
+/*------------------------------------
+            BOX-Modell
+---------------------------------*/
+
+
+html{
+    margin: 2rem;
+
+}
+body {
+    background-image:url(../../img/zoo-tycoon-1089_1074196.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+header {
+    margin: 1rem 0 2rem;
+}
+.container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;  /* Creates two equal columns */
+    gap: 2px;                       /* Adds space between the sections */
+}
+
+section {
+    padding: 5px;                   /* Optional: Adds padding */
+    border: 1px hidden black;         /* Optional: Adds a border around each section */
+}
+
+.container {
+    display: flex;                /* Enables Flexbox */
+    gap: 2px;                    /* Adds space between the paragraphs */
+}
+
+.container p {
+    padding: 0px;                /* Optional: Adds padding within each paragraph */
+    border: 2px solid rgb(124, 60, 0);      /* Optional: Adds a border around each paragraph */
+    text-align: center;           /* Centers the text */
+    background-color: rgba(29, 85, 29, 0.575); 
+       
+}
+
+.item {
+   
+    padding: px;
+    text-align: center;
+    
+}
+
+/* Target items in the second row (items 5 to 8 in this example) */
+.container .item:nth-child(n+4):nth-child(-n+6)
+    background-color: rgb(29, 85, 29);
+
+
+footer {
+    margin: 2rem 0 1rem 0;
+}
+
+/*------------------------------
+            Colors
+-------------------------------*/
+
+.red {
+    color: rgb(133, 28, 28);
+    font-weight: bolder;
+    background-color: rgb(219, 191, 244);
+    border: 2px solid black;
+}

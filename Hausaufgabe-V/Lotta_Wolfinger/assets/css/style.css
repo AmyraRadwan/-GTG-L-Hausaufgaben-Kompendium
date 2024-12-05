@@ -1,0 +1,193 @@
+/* -----------------------------
+        FONT-FILE IMPORTS
+------------------------------ */
+
+/* Von Google Fonts in CSS einbinden */
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100..900&display=swap");
+
+/* -----------------------------
+        GLOBALE STYLES 
+------------------------------ */
+
+html {
+	font-size: 1vw; /* Festlegen der globalen Schriftgröße */
+}
+
+body {
+	font-family: "Azeret Mono", sans-serif; /* Einheitliche Schriftart */
+	background-color: #ffffff;
+	opacity: 0.8;
+	background-image: linear-gradient(#000000 0.7px, transparent 0.7px), linear-gradient(to right, #000000 0.7px, #ffffff 0.7px);
+	background-size: 14px 14px;
+}
+
+article {
+	font-family: "Azeret Mono", sans-serif; /* Artikel-Schriftart */
+	padding: 2rem;
+	margin: 2rem;
+}
+
+/* -----------------------------
+        TITEL MIT ANIMATION
+------------------------------ */
+
+.headline span, /* Anpassung für headline */
+.article-subtitle span {
+	/* Anpassung für article-subtitle */
+	font-family: "Tiny5", sans-serif;
+	font-size: 15rem; /* Sehr große Schriftgröße */
+	line-height: 1;
+	font-weight: 50;
+	letter-spacing: -0.02rem;
+	margin: auto;
+	color: #000000;
+	animation: weight 3s infinite;
+	animation-delay: calc(var(--char-index) * 150ms); /* Zeitverzögerung basierend auf Zeichenindex */
+	white-space: nowrap; /* Verhindert das Umbruch von Wörtern */
+	display: inline-block; /* Zeilenweise Darstellung */
+}
+
+/* -----------------------------
+        ANIMATION FÜR SCHRIFTSTÄRKE
+------------------------------ */
+
+@keyframes weight {
+	from {
+		font-weight: 100;
+	}
+	50% {
+		font-weight: 900; /* Maximale Dicke */
+	}
+	to {
+		font-weight: 100;
+	}
+}
+
+/* -----------------------------
+        TITEL STYLE
+------------------------------ */
+
+h3.article-subtitle {
+	font-family: "Azeret Mono", sans-serif; /* Schriftart */
+	font-size: 5rem; /* Schriftgröße */
+	text-align: left; /* Links ausrichten */
+	margin-top: 20px; /* Abstand nach oben */
+	margin-bottom: 20px; /* Abstand nach unten */
+	padding: 0;
+	color: rgb(255, 0, 242);
+	text-decoration-line: underline;
+	text-decoration-style: dotted;
+}
+
+/* -----------------------------
+              TEXT
+------------------------------ */
+.chapter-headline {
+	font-size: 30px;
+	font-style: italic;
+	color: #2600ff; /* Schriftfarbe */
+	text-transform: uppercase; /* Alle Buchstaben groß */
+	text-align: left;
+	margin-top: 20px; /* Abstand nach oben */
+	margin-bottom: 20px; /* Abstand nach unten */
+}
+
+p {
+	font-family: "Azeret Mono", sans-serif;
+	font-size: 2rem;
+	letter-spacing: -0.04em;
+	hyphens: auto;
+	text-indent: 8rem;
+}
+
+a,
+blockquote,
+figcaption,
+sup,
+ul.footnotes-list,
+li {
+	font-family: "Azeret Mono", sans-serif;
+	font-size: 1rem;
+}
+
+/* -----------------------------
+       FARBIGE LINK-HOVER 
+------------------------------ */
+
+a:hover {
+	color: #2600ff;
+	text-decoration: underline; /* Sicherstellen, dass eine Textdekoration vorhanden ist */
+	text-decoration-color: #2701ff;
+}
+
+/* -----------------------------
+              BILDER
+------------------------------ */
+
+figure {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 16px; /* Abstand zwischen den Bildern */
+	margin: 2rem auto;
+}
+
+img {
+	width: 100%; /* Bilder skalieren auf Containergröße */
+	height: auto; /* Proportionen beibehalten */
+}
+
+/* -----------------------------
+              TEXT
+------------------------------ */
+.chapter-headline {
+	font-size: 30px;
+	font-style: italic;
+	color: #2600ff; /* Schriftfarbe */
+
+	text-transform: uppercase; /* Alle Buchstaben groß */
+	text-align: left;
+	margin-top: 20px; /* Abstand nach oben */
+	margin-bottom: 20px; /* Abstand nach unten */
+}
+p {
+	font-family: "Azeret Mono", sans-serif;
+	font-size: 2rem;
+	letter-spacing: -0.04em;
+	hyphens: auto;
+	text-indent: 8rem;
+}
+
+a,
+blockquote,
+figcaption,
+sup,
+ul.footnotes-list,
+li {
+	font-family: "Azeret Mono", sans-serif;
+	font-size: 1rem;
+}
+
+/* -----------------------------
+       FARBIGE LINK-HOVER 
+------------------------------ */
+
+a:hover {
+	color: #2600ff;
+	text-decoration: underline; /* Sicherstellen, dass eine Textdekoration vorhanden ist */
+	text-decoration-color: #2701ff;
+}
+
+/* -----------------------------
+              BILDER
+------------------------------ */
+
+figure {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 16px; /* Abstand zwischen den Bildern */
+	margin: 2rem auto;
+}
+img {
+	width: 100%; /* Bilder skalieren auf Containergröße */
+	height: auto; /* Proportionen beibehalten */
+}

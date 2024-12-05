@@ -1,0 +1,138 @@
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Verhindert Scrollbalken durch Animation */
+    background-color: #ff9d00;
+}
+
+/* Allgemeiner Stil für alle Elemente */
+.kissen, .rechteck, .dreieck, .kugel {
+    position: absolute;
+    mix-blend-mode: color-burn;
+    left: 9em;
+    z-index: -10;
+    
+}
+
+/* Kissen */
+.kissen {
+    width: 1150px;
+    height: auto;
+    margin-left: 25em;
+    top: 25em;
+    animation: kissen-animation 5s infinite alternate ease-in-out;
+}
+
+/* Rechteck */
+.rechteck {
+    
+    width: 320px;
+    height: auto;
+    margin-left: 45em;
+    top: 8em;
+    animation: rechteck-animation 7s infinite alternate ease-in-out;
+}
+
+/* Dreieck */
+.dreieck {
+    width: 320px;
+    height: auto;
+    margin-left: 20em;
+    top: 10em;
+    animation: dreieck-animation 6s infinite alternate ease-in-out;
+}
+
+/* Kugel */
+.kugel {
+    width: 160px;
+    height: auto;
+    margin-left: 70em;
+    top: 8em;
+    animation: kugel-animation 4s infinite alternate ease-in-out;
+}
+
+/* Animationen */
+@keyframes kissen-animation {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(50px); }
+    50% { transform: translateX(-30px); }
+    75% { transform: translateX(70px); }
+    100% { transform: translateX(-10px); }
+}
+
+@keyframes rechteck-animation {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-40px); }
+    50% { transform: translateX(60px); }
+    70% { transform: translateX(-20px); }
+    100% { transform: translateX(50px); }
+}
+
+@keyframes dreieck-animation {
+    0% { transform: translateX(0); }
+    30% { transform: translateX(40px); }
+    60% { transform: translateX(-50px); }
+    100% { transform: translateX(120px); }
+   
+}
+
+@keyframes kugel-animation {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-60px); }
+    50% { transform: translateX(50px); }
+    75% { transform: translateX(-30px); }
+    100% { transform: translateX(100px); }
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20rem;
+    font-weight: 500;
+    color: rgb(17, 0, 255);
+    text-decoration:none;
+    
+    
+   
+    
+    
+
+}
+
+.takete {
+    position: relative;
+    top: -170px;
+    font-size: 250px;
+    
+}
+
+.kiki {
+
+    position: relative;
+    top: -300px;
+    font-size: 250px;
+    
+}
+
+.askew {
+    position: relative;
+    top: -450px;
+    font-size: 250px;
+
+}
+
+a {
+    text-decoration: none; /* Entfernt die Unterstreichung */
+    color: inherit; /* Nimmt die Standard-Schriftfarbe des umgebenden Texts */
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(255, 106, 0);
+    font-weight: 200;
+  
+}
+

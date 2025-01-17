@@ -1,0 +1,36 @@
+/* -----------------------------
+         GRUNDLEGENDES
+------------------------------ */
+body,
+html {
+  /* Overflow-y: hidden; gibt an das keine vertikale Scroll-Bar zu sehen ist */
+  overflow-y: hidden;
+}
+
+/* -----------------------------
+        HINTERGRUNDBILD
+------------------------------ */
+.parallax-wrapper {
+  background-image: url("../img/Bildschirmfoto 2024-11-28 um 16.17.36.jpeg");
+  /* Das Hintergrundbild wird auf die Gesamthöhe des 
+    Bildschirms skaliert und mittig, ohne sich zu wiederholen 
+    auf die gesamte Breite des Bildschirms skaliert (cover) */
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* -----------------------------
+        PARALLAX-BILDER
+------------------------------ */
+figure {
+  /* Alle Bilder werden auf die Gesamtbreite des Bildschirms hochskaliert */
+  width: 100vw;
+}
+
+img {
+  /* So behalten die Bilder selbst ihre originalen Proportionen */
+  width: 100%;
+  height: 100%;
+}

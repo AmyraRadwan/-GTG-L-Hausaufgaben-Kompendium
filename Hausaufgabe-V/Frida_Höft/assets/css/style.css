@@ -1,0 +1,134 @@
+/* -----------------------------
+         NEU
+------------------------------ */
+* {
+}
+
+.colums {
+	margin-left: 3rem;
+	margin-top: 5rem;
+	margin-right: 2rem;
+	position: absolute;
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-template-rows: repeat(1, 1fr);
+	justify-content: center;
+	gap: 1.3rem;
+	height: 100svh;
+	width: 95svw;
+}
+
+@keyframes weight {
+	from {
+		font-weight: 100;
+	}
+	50% {
+		font-weight: 900;
+	}
+	to {
+		font-weight: 100;
+	}
+}
+
+.article-title span,
+.article-subtitle span {
+	animation: weight 2s infinite;
+	animation-delay: calc(var(--char-index) * 100ms);
+}
+
+h1 {
+	font-family:
+		Funnel Display,
+		sans-serif;
+	font-size: 4.5rem;
+	line-height: 0.9;
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-left: 3rem;
+	margin-top: 4rem;
+	fill: blue;
+}
+
+h2 {
+	font-family:
+		Funnel Display,
+		sans-serif;
+	font-size: 4.5rem;
+	line-height: 0.9;
+	font-style: normal;
+	font-weight: 300;
+	margin-left: 3rem;
+	margin-top: 1rem;
+}
+
+h3 {
+	font-family: Doto, sans-serif;
+	font-weight: 500;
+	font-size: 1.8rem;
+	margin-bottom: 0.8rem;
+}
+
+p {
+	font-family:
+		Funnel Display,
+		sans-serif;
+	font-size: 1rem;
+}
+
+em {
+	text-transform: uppercase;
+}
+
+em.italic {
+	text-transform: none;
+	font-style: italic;
+}
+
+/* -----------------------------
+         MARQUEE
+------------------------------ */
+
+.marquee {
+	height: 2.5rem;
+	width: 1fr;
+
+	overflow: hidden;
+	position: relative;
+}
+
+.marquee div {
+	margin-top: 1rem;
+	display: block;
+	width: 200%;
+	height: 30px;
+
+	position: absolute;
+	overflow: hidden;
+
+	animation: marquee 10s linear infinite;
+}
+
+.marquee span {
+	font-family: Doto, sans-serif;
+	font-weight: 900;
+	font-size: 0.95rem;
+	text-transform: uppercase;
+	float: left;
+	width: 50%;
+}
+
+@keyframes marquee {
+	0% {
+		left: 0;
+	}
+	100% {
+		left: -100%;
+	}
+}
+
+.marquee span::before {
+	content: "·";
+	padding-right: 0.7em;
+	padding-left: 0.9em;
+}

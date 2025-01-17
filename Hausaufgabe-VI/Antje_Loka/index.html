@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+  <!-- <!doctype html> und das html-Element mit Sprachkennzeichnung müssen immer vorhanden sein, damit die Seite funktioniert.-->
+
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Durch dieses Element können Sonderzeichen angezeigt werden (z. B. äöüß oder Emojis) -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Browserkompatibilität -->
+
+    <title>Update abschließen</title>
+    <!-- Titel der Seite. Wird im Browser Tab angezeigt. -->
+
+    <link href="assets/css/reset.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/style.css" type="text/css" rel="stylesheet" />
+    <!-- Verlinkung der CSS-Dateien -->
+  </head>
+
+  <!-- Im <body> ist alles, was im Browserfenster angezeigt wird. -->
+  <body>
+    <section class="parallax-wrapper" id="scene">
+      <!-- Jede Ebene benötigt ein data-depth Attribut. Die auf jede Ebene angewendete Bewegung wird mit dem jeweiligen Wert multipliziert. -->
+      <figure data-depth="0.4">
+        <img src="assets/img/maulwurf-a.svg" alt="Mein Alternative-Text" />
+      </figure>
+      <figure data-depth="0.6">
+        <img src="assets/img/maulwurf-b.svg" alt="Mein Alternative-Text" />
+      </figure>
+      <figure data-depth="0.2">
+        <img src="assets/img/maulwurf-c.svg" alt="Mein Alternative-Text" />
+      </figure>
+      <figure data-depth="0.5">
+        <img src="assets/img/maulwurf-d.svg" alt="Mein Alternative-Text" />
+      </figure>
+      <figure data-depth="0.6">
+        <img src="assets/img/maulwurf-e.svg" alt="Mein Alternative-Text" />
+      </figure>
+      <figure data-depth="0.8">
+        <img src="assets/img/maulwurf-f.svg" alt="Mein Alternative-Text" />
+      </figure>
+      <figure data-depth="0.5">
+        <img src="assets/img/maulwurf-g.svg" alt="Mein Alternative-Text" />
+      </figure>
+      <figure data-depth="0.4">
+        <img src="assets/img/maulwurf-h.svg" alt="Mein Alternative-Text" />
+      </figure>
+      <figure data-depth="0.7">
+        <img src="assets/img/maulwurf-i.svg" alt="Mein Alternative-Text" />
+      </figure>
+    </section>
+    <script src="assets/js/parallax.min.js"></script>
+    <!-- Verlinkung der Parallax.js Library -->
+    <script src="assets/js/script.js"></script>
+    <!-- Verlinkung der Javascript Dateien -->
+  </body>
+</html>
+<!-- Schließendes html-Element nicht vergessen! -->

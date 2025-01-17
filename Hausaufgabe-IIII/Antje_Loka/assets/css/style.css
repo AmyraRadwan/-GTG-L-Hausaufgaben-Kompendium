@@ -1,0 +1,38 @@
+/* -----------------------------
+         SVG-MORPHING
+------------------------------ */
+body {
+  background-color: #660e15;
+  min-height: auto;
+  
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 50vh;
+  margin-top: 10rem;
+}
+/* h1{
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 30px;
+	border: 10px solid black;
+	height: 2rem; */
+}
+svg {
+  height: auto;
+  width: 100%;
+  border: 10px solid black;
+  margin: 0.5px;
+}
+
+image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: auto;
+}
+
+

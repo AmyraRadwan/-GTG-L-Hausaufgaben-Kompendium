@@ -1,0 +1,280 @@
+/* -----------------------------
+        FONT-FILE IMPORTS
+------------------------------ */
+
+/* True-Type Format für Lineal einbinden */
+@font-face {
+	font-family: "Lineal";
+	src: url("../fonts/LinealVF.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* True-Type Format für StereoSans einbinden */
+@font-face {
+	font-family: "Stereo Sans";
+	src: url("../fonts/StereoSans.ttf") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* -----------------------------
+        GLOBALE STYLES 
+------------------------------ */
+
+html {
+	font-size: 1vw; /* Festlegen der globalen Schriftgröße, für responsives Design */
+}
+
+body {
+	font-family: "Stereo Sans", serif; /* Festlegen der globalen Schrift */
+	background-color: #fcfad5; /* Festlegen der Hintergrundfarbe */
+}
+
+article {
+	padding: 2rem;
+	margin: 2rem;
+}
+
+/* -----------------------------
+        TYPENSCHILDER
+------------------------------ */
+
+.article-type,
+.acknowledgements-label {
+	font-family: "Lineal";
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 0.9;
+	border-radius: 0.5rem;
+	background-color: #ff0015;
+	color: #fffff2;
+	display: inline-block;
+	padding: 0.7rem 0.7rem 0.5rem 0.7rem;
+	margin-bottom: 2rem;
+}
+
+.acknowledgements-label {
+	margin-bottom: 0rem !important;
+	margin-top: 2rem !important;
+}
+
+/* -----------------------------
+         ÜBERSCHRIFTEN
+------------------------------ */
+/* Header Div*/
+div.fixed-header {
+	background-color: rgba(252, 250, 213);
+}
+
+/* Titel des Artikels */
+.article-title span,
+.article-subtitle span {
+	font-family: "Lineal", sans-serif;
+	font-size: 6rem;
+	line-height: 1;
+	font-weight: 100;
+	letter-spacing: -0.02rem;
+	margin: 0;
+	animation: flip 13s infinite;
+	animation-delay: calc(var(--char-index) * 300ms);
+	color: #ff0015;
+}
+
+@keyframes flip {
+	from {
+		transform: scale(1, 1);
+	}
+
+	50% {
+		transform: scale(1, -1);
+	}
+
+	to {
+		transform: scale(1, 1);
+	}
+}
+
+/* Untertitel des Artikels */
+h3.article-subtitle {
+	font-family: "Lineal", sans-serif;
+	font-size: 6rem;
+	padding-left: 7rem;
+	color: #ff0015;
+}
+h3.article-subtitle::before {
+	content: "———";
+	letter-spacing: -1em;
+	padding-right: 0.7em;
+	padding-left: 0.9em;
+	color: #ff0015;
+}
+
+/* Namen der Autoren */
+div.article-author {
+	font-family: "Lineal", sans-serif;
+	font-size: 2rem;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+	text-transform: lowercase;
+	padding-top: 1rem;
+	padding-bottom: 4rem;
+	color: #ff0015;
+	text-align: right;
+}
+
+/* Zwischenüberschriften */
+h3.chapter-headline {
+	font-family: "Lineal", sans-serif;
+	font-style: italic;
+	color: #ff0015;
+	font-size: 3.5rem;
+	padding-bottom: 1rem;
+	letter-spacing: 0.01em;
+	margin-top: calc(2.5rem * 2);
+}
+
+/* -----------------------------
+         Layout
+------------------------------ */
+/* Header */
+
+header {
+	position: sticky;
+	top: 0;
+}
+
+div.footsies {
+	position: sticky;
+	bottom: 0;
+	background-color: rgba(252, 250, 213);
+}
+/* -----------------------------
+              TEXT
+------------------------------ */
+
+p {
+	margin: 0;
+	hyphens: auto;
+	/* Nicht mehr als 2 aufeinanderfolgende Zeilen 
+	die mit einem Bindestrich enden  */
+	hyphenate-limit-lines: 2;
+	-ms-hyphenate-limit-lines: 2;
+	-webkit-hyphenate-limit-lines: 2;
+	/* Trenne nur Wörter mit mehr als 6 Zeichen,
+     Lasse min. 3 Zeichen vor dem Trennstrich und min. 2 danach */
+	hyphenate-limit-chars: 6 3 3;
+	-ms-hyphenate-limit-chars: 6 3 3;
+	-webkit-hyphenate-limit-chars: 6 3 3;
+	color: #ff0015;
+}
+.article-content p {
+	font-size: 2.5rem;
+	letter-spacing: 0.1em;
+}
+/* indent new paragraph */
+.article-content p + p {
+	text-indent: 6rem;
+}
+
+.acknowledgements-wrapper {
+	font-family: "Lineal";
+	margin-top: 0.5rem;
+	font-size: 1.2rem;
+}
+
+ul.acknowledgements {
+	list-style-type: none;
+}
+
+li {
+	margin: 0.5rem 10rem 0.5rem 0.5rem;
+}
+
+/* -----------------------------
+       TEXTAUSZEICHNUNG
+------------------------------ */
+/* important text */
+.underline {
+	text-decoration: underline;
+	text-decoration-style: double;
+	text-decoration-color: #ff0015;
+	text-decoration-thickness: 0.1rem;
+	text-underline-offset: 0.2rem;
+	color: #ff0015;
+}
+
+/* emphasized text */
+em {
+	text-decoration: underline;
+	text-decoration-style: wavy;
+	text-decoration-color: #00ff55;
+	text-decoration-thickness: 3px;
+}
+/* reveal emphasized text */
+em:hover {
+	font-family: "Lineal", sans-serif;
+	font-size: 2.5rem;
+	letter-spacing: 0.1rem;
+	color: #00ff55;
+	text-transform: uppercase;
+}
+
+/* Hervorgehobenes Zitat */
+blockquote {
+	background-color: #ff0015;
+	color: #ece9bd;
+	text-rendering: geometricPrecision;
+	padding: 1rem 1rem 1rem 2rem;
+	margin: 3rem auto;
+	border-radius: 1rem;
+	width: 35%;
+}
+
+p.blockquote {
+	color: #ece9bd;
+}
+
+/* Bildunterschriften */
+.article-content figure figcaption {
+	margin: 0.7rem 0;
+}
+.article-content figure figcaption p {
+	font-size: 2rem;
+	line-height: 1.3;
+	letter-spacing: 0.01em;
+	color: #ece9bd;
+	background-color: #ff0015;
+	border-radius: 1rem;
+	text-align: center;
+}
+.article-content figure figcaption a {
+	text-decoration-thickness: 0.01rem;
+	color: #ff0015;
+}
+
+/* -----------------------------
+             BILDER
+------------------------------ */
+
+figure {
+	margin-top: 0.6rem;
+	margin-right: 3rem;
+}
+
+.in-text-image {
+	width: 40%;
+	float: left;
+}
+
+.in-text-image.right {
+	float: right;
+	margin-top: 0.6rem;
+	margin-right: 0;
+	margin-left: 2rem;
+}
+
+.in-text-image img {
+	width: 100%;
+	height: auto;
+}

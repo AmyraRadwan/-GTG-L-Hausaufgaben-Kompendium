@@ -1,0 +1,30 @@
+/* -----------------------------
+         GRUNDLEGENDES
+------------------------------ */
+body,
+html {
+	/* Overflow-y: hidden; gibt an das keine vertikale Scroll-Bar zu sehen ist */
+	overflow-y: hidden;
+}
+
+/* -----------------------------
+        HINTERGRUNDBILD
+------------------------------ */
+.parallax-wrapper {
+	background-color: rgb(35, 35, 222);
+}
+
+
+/* -----------------------------
+        PARALLAX-BILDER
+------------------------------ */
+figure {
+	/* Alle Bilder werden auf die Gesamtbreite des Bildschirms hochskaliert */
+	width: 100vw;
+}
+
+img {
+	/* So behalten die Bilder selbst ihre originalen Proportionen */
+	width: 100%;
+	height: auto;
+}

@@ -1,0 +1,68 @@
+img {
+	/* So behalten die Bilder selbst ihre originalen Proportionen */
+	width: 100%;
+	height: auto;
+}
+
+/* -----------------------------
+    SCROLL-SLIDER CONTAINER
+------------------------------ */
+
+.container {
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+}
+
+/* -----------------------------
+  DIE EINZELNEN SCROLL-EBENEN
+------------------------------ */
+
+/* Die Bilder müssen alle die gesamte Bildschirmbreit und Höhe einnehmen, 
+sowie absolut platziert sein um genau an ihre Position zu scrollen. */
+.panel {
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.e,
+.f {
+	mix-blend-mode: color-burn;
+}
+
+/* Das Startbild und die Bilder die nacheinander reinfliegen  */
+.a {
+	background-image: url("../img/background.jpg");
+}
+.b {
+	background-image: url("../img/Ebene-2.png");
+}
+.c {
+	background-image: url("../img/Ebene-1.png");
+}
+.d {
+	background-image: url("../img/Ebene-3.png");
+}
+.e {
+	background-image: url("../img/Ebene-4.png");
+}
+.f {
+	background-image: url("../img/Ebene-5.png");
+}
+
+/* -----------------------------
+  DER WRAPPER DER DANACH FOLGT
+------------------------------ */
+
+.wrapper {
+	width: 100%;
+	height: 100vh;
+	background-color: #e6c9fe;
+	text-align: center;
+	align-content: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 3rem;
+}

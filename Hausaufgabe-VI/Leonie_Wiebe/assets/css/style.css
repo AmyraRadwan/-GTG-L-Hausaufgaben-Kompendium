@@ -1,0 +1,26 @@
+/* -----------------------------
+         ZWISCHENTITEL
+------------------------------ */
+body {
+  background-image: url("Test.webp"); /* Pfad zum Bild */
+  background-size: cover; /* Skaliert das Bild, um den gesamten Hintergrund zu bedecken */
+  background-repeat: no-repeat; /* Verhindert Wiederholungen des Bildes */
+  background-position: center; /* Zentriert das Bild */
+  background-attachment: fixed; /* Fixiert das Bild beim Scrollen */
+}
+
+body {
+  background-image: url("../img/Himmel.jpg");
+}
+
+#scene {
+  display: flex; /* Aktiviert Flexbox */
+  margin-left: 3.5vw;
+  margin-top: 4vw;
+  height: 100vh; /* Stellt sicher, dass der Container die gesamte Höhe des Bildschirms einnimmt */
+  position: relative; /* Erforderlich, wenn Parallax-Bibliotheken arbeiten */
+}
+
+#scene div {
+  position: absolute; /* Für das Parallax-Effekt benötigt */
+}
